@@ -13,16 +13,17 @@ $arr = array(
 ); 
 function array_unique_ex(&$arr, $key) 
 { 
-    $rAr = array(); 
+    $tempArr = array(); 
     for ($i = 0; $i < count($arr); $i++) 
     { 
-        if (!isset($rAr[$arr[$i][$key]])) 
+        if (!isset($tempArr[$arr[$i][$key]])) 
         { 
-            $rAr[$arr[$i][$key]]=$arr[$i]; 
+            $tempArr[$arr[$i][$key]] = $arr[$i]; 
         } 
     } 
-    $arr=array_values($rAr); 
+    $arr=array_values($tempArr); 
 } 
-array_unique_ex(&$arr,'name'); 
+print_r($arr);
+array_unique_ex($arr, 'name'); 
 print_r($arr); 
 
