@@ -11,6 +11,10 @@ $arr = array(
     array('id' => 6,'name' => 'aaa'), 
     array('id' => 7,'name' => 'bbb'), 
 ); 
+
+/**
+ * 根据二维数组中的key名称进行去重
+ */
 function array_unique_ex(&$arr, $key) 
 { 
     $tempArr = array(); 
@@ -21,6 +25,7 @@ function array_unique_ex(&$arr, $key)
             $tempArr[$arr[$i][$key]] = $arr[$i]; 
         } 
     } 
+    // 将数组中的$value取出来组成一个新的索引数组
     $arr=array_values($tempArr); 
 } 
 print_r($arr);

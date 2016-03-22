@@ -1,7 +1,7 @@
 <?php
 /* =============================================================================
 #     FileName: json_json_encode.php
-#         Desc: 对变量(通常为数组)进行JSON编码
+#         Desc: 对变量(通常为数组)进行JSON编码, 生成一个JSON字符串
 #       Author: Jie Yin
 #        Email: mumingv@163.com
 #     HomePage: https://github.com/mumingv
@@ -23,5 +23,4 @@ $arr = array(
 $json_str = json_encode($arr);
 print_r("json_str is: \n");
 print_r($json_str);
-
 
