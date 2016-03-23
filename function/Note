@@ -5,7 +5,6 @@ date-time.php   日期/时间类函数
 目录            说明
 ---------------------------------------------------------------
 json            JSON函数：http://php.net/manual/zh/ref.json.php
-
-
+filesystem      文件操作：http://php.net/manual/zh/ref.filesystem.php
 
 

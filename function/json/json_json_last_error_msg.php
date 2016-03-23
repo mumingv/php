@@ -24,7 +24,7 @@ $json[] = "{'Organization': 'PHP Documentation Team'}";
 // 遍历数组中的JSON字符串，并进行解码
 foreach ($json as $string) {
     echo 'Decoding: ' . $string;
-    json_decode($string);
+    json_decode($string, true);
     switch (json_last_error()) {
         // 没有错误发生
         case JSON_ERROR_NONE:
