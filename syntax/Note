@@ -1,1 +1,2 @@
-include         流程控制语句include：http://php.net/manual/zh/function.include.php
+flow_control            流程控制语句：http://php.net/manual/zh/language.control-structures.php
+magic_constant          魔术常量
