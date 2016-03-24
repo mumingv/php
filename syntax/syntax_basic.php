@@ -35,4 +35,6 @@ foreach ($college_major as $key => $value) {
     print_r($value);
 }
 
+// 循环内部控制
+
 
