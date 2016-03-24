@@ -11,12 +11,30 @@
  ***********************************************************/
 
 # 语法：bool class_exists ( string $class_name [, bool $autoload = true ] )
+# 说明：$autoload默认值为true，表示当类不存在时，会自动调用__autoload进行加载
 
 # 示例：基本用法
-if (class_exists("MyClass")) {
-    $object = new MyClass();
-    echo "MyClass exists" . PHP_EOL;
+if (class_exists("MyClassName")) {
+    $object = new MyClassName();
+    echo "MyClassName exists" . PHP_EOL;
 } else {
-    echo "MyClass not exists" . PHP_EOL; //MyClass not exists
+    echo "MyClassName not exists" . PHP_EOL; //MyClassName not exists
+}
+
+function __autoload($className) {
+    include_once("__autoload/" . $className . ".php");
+}
+# 示例：不调用__autoload进行加载
+if (class_exists("myClass", false)) {
+    $object = new MyClass();
+} else {
+    echo "myClass not exists" . PHP_EOL; //myClass not exists
+}
+
+# 示例：默认情况下，myClass类不存在时会自动调用__autoload进行加载
+if (class_exists("myClass")) {
+    $object2 = new MyClass(); //myClass init successfuly!
+} else {
+    echo "myClass not exists" . PHP_EOL;
 }
 
