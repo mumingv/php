@@ -1,7 +1,7 @@
 <?php
 /***********************************************************
  *     FileName: index.php
- *         Desc: 
+ *         Desc: spl_autoload_register函数示例
  *       Author: Jie Yin
  *        Email: mumingv@163.com
  *     HomePage: https://github.com/mumingv
@@ -17,7 +17,8 @@ function my_autoload($classname) {
     include_once($filename);
 }
 // 将my_autoload函数注册到SPL的__autoload函数队列尾部
-spl_autoload_register(my_autoload);
+//spl_autoload_register(my_autoload); //不加引号也是可以的
+spl_autoload_register("my_autoload");
 
 // 这里myClass未包含，会自动调用__autoload("myClass")函数，将对应的类定义加载进来
 $obj = new myClass();

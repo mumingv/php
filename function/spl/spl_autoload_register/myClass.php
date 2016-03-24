@@ -1,7 +1,7 @@
 <?php
 /***********************************************************
  *     FileName: myClass.php
- *         Desc: 
+ *         Desc: spl_autoload_register函数示例
  *       Author: Jie Yin
  *        Email: mumingv@163.com
  *     HomePage: https://github.com/mumingv
