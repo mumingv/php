@@ -20,3 +20,6 @@ echo "4) " . dirname("/home/users/yinjie05/git/php/function/") . PHP_EOL;  // /h
 echo "5) " . dirname("/") . PHP_EOL;  // /
 echo "6) " . dirname("filename") . PHP_EOL;  // .
 
+echo "7) " . __DIR__ . PHP_EOL;  // /home/users/yinjie05/git/php/function/filesystem
+echo "8) " . dirname(__DIR__) . PHP_EOL;  // /home/users/yinjie05/git/php/function
+
