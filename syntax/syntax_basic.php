@@ -38,3 +38,12 @@ foreach ($college_major as $key => $value) {
 // 循环内部控制
 
 
+/**
+ * 一些关键字
+ */
+
+// include
+// 功能：包含并运行指定文件
+// 示例：include '../inc/env.inc.php';
+
+
