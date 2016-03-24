@@ -8,5 +8,6 @@ array           数组操作：http://php.net/manual/zh/ref.array.php
 filesystem      文件操作：http://php.net/manual/zh/ref.filesystem.php
 json            JSON函数：http://php.net/manual/zh/ref.json.php
 misc            杂项函数：http://php.net/manual/zh/ref.misc.php
+variable        变量相关：http://php.net/manual/zh/ref.var.php
 
 
