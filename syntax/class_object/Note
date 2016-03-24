@@ -1,1 +1,6 @@
-final           final关键字：http://php.net/manual/zh/language.oop5.final.php
+class_constant          类常量：http://php.net/manual/zh/language.oop5.constants.php
+final                   final关键字：http://php.net/manual/zh/language.oop5.final.php
+late_static_bindings    后期静态绑定：http://php.net/manual/zh/language.oop5.late-static-bindings.php
+
+
+
