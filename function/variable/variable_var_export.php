@@ -11,6 +11,7 @@
  ***********************************************************/
 
 # 语法：mixed var_export ( mixed $expression [, bool $return ] )
+# 说明：如果$return是true的话，则只返回而不打印
 
 $a = array(1, 2, array ("a", "b", "c"));
 var_export($a);
