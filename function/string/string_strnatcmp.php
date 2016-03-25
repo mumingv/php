@@ -29,6 +29,7 @@ array (
 echo "\nNatural order string comparison\n";
 usort($arr2, "strnatcmp");
 var_export($arr2);
+echo PHP_EOL;
 /*
 array (
   0 => 'img1.png',
@@ -37,4 +38,9 @@ array (
   3 => 'img12.png',
 )
 */
+
+
+# 示例：比较两个字符串的大小
+echo strnatcmp("img2", "img1") . PHP_EOL; //1
+echo strnatcmp("5.4.41", "5.4.0") . PHP_EOL; //1
 
