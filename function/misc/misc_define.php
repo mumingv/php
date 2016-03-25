@@ -18,7 +18,7 @@
 // 示例：大小写敏感
 define("CONSTANT", "Hello world.");
 echo CONSTANT . PHP_EOL;  //输出：Hello World
-echo Constant . PHP_EOL;  //输出：Constant
+echo Constant . PHP_EOL;  //输出：Constant (没有找到对应的常量值，把字面量当常量输出)
 
 // 示例：大小写不敏感
 define("GREETING", "How are you?", true);
