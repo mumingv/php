@@ -1,7 +1,5 @@
 date-time.php   日期/时间类函数
 
-
-
 目录            说明
 ---------------------------------------------------------------
 array           数组操作：http://php.net/manual/zh/ref.array.php
@@ -10,6 +8,7 @@ directory       目录操作：http://php.net/manual/zh/book.dir.php
 filesystem      文件操作：http://php.net/manual/zh/ref.filesystem.php
 funchand        函数处理：http://php.net/manual/zh/ref.funchand.php
 json            JSON函数：http://php.net/manual/zh/ref.json.php
+math            数学函数：http://php.net/manual/zh/ref.math.php
 mbstring        多字节字符串：http://php.net/manual/en/book.mbstring.php
 misc            杂项函数：http://php.net/manual/zh/ref.misc.php
 info            信息函数：http://php.net/manual/zh/ref.info.php
