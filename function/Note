@@ -10,6 +10,7 @@ directory       目录操作：http://php.net/manual/zh/book.dir.php
 filesystem      文件操作：http://php.net/manual/zh/ref.filesystem.php
 json            JSON函数：http://php.net/manual/zh/ref.json.php
 misc            杂项函数：http://php.net/manual/zh/ref.misc.php
+info            信息函数：http://php.net/manual/zh/ref.info.php
 spl             SPL扩展： http://php.net/manual/zh/book.spl.php
 string          字符串：  http://php.net/manual/zh/ref.strings.php
 variable        变量相关：http://php.net/manual/zh/ref.var.php
