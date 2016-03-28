@@ -22,7 +22,10 @@ echo md5($str) . PHP_EOL; //1f3870be274f6c49b3e31a0c6728957f
 // 空字符串
 echo md5("") . PHP_EOL; //d41d8cd98f00b204e9800998ecf8427e
 
-// 第二个参数为true
-//print_r(md5($str, true)); //不太理解, 这个是什么鬼？
-//echo PHP_EOL;
+// 第二个参数为true, 打印结果中16个字符对应的ASCII码
+$bin = md5($str, true);  
+for ($i = 0; $i < strlen($bin); $i++){  
+    echo ord($bin[$i]) . ','; //31,56,112,190,39,79,108,73,179,227,26,12,103,40,149,127,
+}
+echo PHP_EOL;
 
