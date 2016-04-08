@@ -14,7 +14,7 @@
 # 说明：
 # 1. 像array()一样，这不是真正的函数，而是语言结构; 
 # 2. list()用一步操作给一组变量进行赋值;
-# 3. 返回值所有变量值组成的数组;
+# 3. 返回值为所有变量值组成的数组;
 
 # 示例：一般用法
 $info = array('coffee', 'brown', 'caffeine');
@@ -42,4 +42,17 @@ var_dump($a, $b, $c); //int(1) int(2) int(3)
 
 
 # 示例：返回值
+$arr = list($a, list($b, $c)) = array(1, array(2, 3));
+var_export($arr);
+echo PHP_EOL;
+/*
+array (
+  0 => 1,
+  1 => 
+  array (
+      0 => 2,
+      1 => 3,
+  ),
+)
+*/
 

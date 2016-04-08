@@ -19,6 +19,7 @@
 # 示例
 $stack = array("orange", "banana", "apple", "raspberry");
 var_export($stack);
+echo PHP_EOL;
 /*
  * array (
  *   0 => 'orange',
@@ -29,7 +30,10 @@ var_export($stack);
  */
 
 $fruit = array_shift($stack);
+var_export($fruit);
+echo PHP_EOL;
 var_export($stack);
+echo PHP_EOL;
 /*
  * array (
  *   0 => 'banana',

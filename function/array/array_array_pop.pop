@@ -11,7 +11,9 @@
  ***********************************************************/
 
 # 语法：mixed array_pop ( array &$array )
-# 说明：与array_shift函数功能相对
+# 说明：
+# 0. 与array_shift函数功能相对
+# 1. 被弹出数组的单元作为返回值返回
 
 # 示例
 $stack = array("orange", "banana", "apple", "raspberry");
@@ -27,6 +29,8 @@ Array
 */
 
 $fruit = array_pop($stack);
+print_r($fruit);
+echo PHP_EOL;
 print_r($stack);
 /*
 Array
