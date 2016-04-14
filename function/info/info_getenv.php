@@ -13,6 +13,7 @@
 # 语法：string getenv ( string $varname )
 # 说明：phpinfo()可以查看所有环境变量的列表, 如：
 # HOME => /home/users/yinjie05
+# 等同于shell命令 echo $HOME 查询的结果
 
 # 示例
 //phpinfo();
