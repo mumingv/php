@@ -11,6 +11,7 @@
  ***********************************************************/
 
 # 语法：array array_column ( array $input , mixed $column_key [, mixed $index_key ] )
+# 说明：版本要求 >= PHP5.5
 
 # 示例：
 $records = array(
