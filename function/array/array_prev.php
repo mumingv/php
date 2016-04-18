@@ -13,3 +13,4 @@
 # 语法：mixed prev ( array &$array )
 
 # 示例：参考 array_current.php
+
