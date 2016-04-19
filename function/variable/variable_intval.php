@@ -27,7 +27,7 @@ echo intval(0x1A) . PHP_EOL;                    // 26
 echo intval(42000000) . PHP_EOL;                // 42000000
 echo intval(420000000000000000000) . PHP_EOL;   // 0
 echo intval('420000000000000000000') . PHP_EOL; // 9223372036854775807
-echo intval(42, 8) . PHP_EOL;                   // 42
+echo intval(42, 8) . PHP_EOL;                   // 42 ($var不是字符串，第二个参数未起作用)
 echo intval('42', 8) . PHP_EOL;                 // 34
 echo intval(array()) . PHP_EOL;                 // 0
 echo intval(array('foo', 'bar')) . PHP_EOL;     // 1
