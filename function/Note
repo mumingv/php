@@ -6,6 +6,7 @@ array           数组操作：http://php.net/manual/zh/ref.array.php
 class_object    类和对象：http://php.net/manual/zh/ref.classobj.php
 ctype           Cytpe函数：http://php.net/manual/zh/ref.ctype.php
 directory       目录操作：http://php.net/manual/zh/book.dir.php
+error           错误处理：http://php.net/manual/zh/ref.errorfunc.php
 filesystem      文件操作：http://php.net/manual/zh/ref.filesystem.php
 filter          变量过滤：http://php.net/manual/zh/ref.filter.php
 funchand        函数处理：http://php.net/manual/zh/ref.funchand.php
