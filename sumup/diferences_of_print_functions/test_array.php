@@ -16,6 +16,7 @@ $student = array(
 );
 
 //echo($student);
+//print($student);
 print_r($student);
 var_dump($student);
 var_export($student);
