@@ -10,10 +10,14 @@
  *      History:
  ***********************************************************/
 
+# E_DEPRECATED级别的错误默认是关闭的，要打开的话需要修改成如下配置
+# /etc/php.ini
+# error_reporting = E_ALL | E_STRICT
+
 // 屏蔽所有错误信息
 //error_reporting(0);
 $date = "2012-12-20";
-if (ereg("([0-9]{4})-([0-9]{1,2})-([0-9]{1,2})", $date, $regs)) {
+if (ereg("([0-9]{4})-([0-9]{1,2})-([0-9]{1,2})", $date, $regs)) { //PHP Deprecated:  Function ereg() is deprecated
     echo "$regs[3].$regs[2].$regs[1]", PHP_EOL; //20.12.2012
 } else {
     echo "Invalid date format: $date";
