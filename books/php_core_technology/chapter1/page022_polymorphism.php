@@ -34,6 +34,7 @@ function doprint(employee $obj) {
     $obj->working();
 }
 
-doprint(new teacher());
-doprint(new coder());
+doprint(new teacher()); //Teaching.
+doprint(new coder()); //Coding.
+//doprint(new employee()); //PHP Fatal error:  Cannot instantiate interface employee
 

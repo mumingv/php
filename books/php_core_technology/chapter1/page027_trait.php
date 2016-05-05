@@ -39,3 +39,5 @@ $obj->sayWorld();
 $obj->sayExclamationMark();
 // 输出：Hello World!
 
+//$obj_err = new Hello(); //PHP Fatal error:  Cannot instantiate trait Hello
+

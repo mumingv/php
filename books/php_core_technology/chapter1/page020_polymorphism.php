@@ -36,7 +36,7 @@ function doprint($obj) {
     }
 }
 
-doprint(new teacher());
-doprint(new coder());
-doprint(new employee());
+doprint(new teacher()); //Teaching.
+doprint(new coder()); //Coding.
+doprint(new employee()); //Error
 

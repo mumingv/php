@@ -37,13 +37,36 @@ $student->gender = 'male';
 $student->age = '25';
 
 // 获取对象的属性
-var_dump(get_object_vars($student));
+print_r(get_object_vars($student));
+/*
+Array
+(
+    [name] => Tom
+    [gender] => male
+    [age] => 25
+)
+ */
 
 // 获取类的属性/对象所属类的属性
-var_dump(get_class_vars('person'));
-var_dump(get_class_vars(get_class($student)));
+print_r(get_class_vars('person'));
+print_r(get_class_vars(get_class($student)));
+/*
+Array
+(
+    [name] => 
+    [gender] => 
+)
+ */
 
 // 获取类的方法/对象所属类的方法
-var_dump(get_class_methods('person'));
-var_dump(get_class_methods(get_class($student)));
+print_r(get_class_methods('person'));
+print_r(get_class_methods(get_class($student)));
+/*
+Array
+(
+    [0] => say
+    [1] => __set
+    [2] => __get
+)
+ */
 

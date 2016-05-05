@@ -10,6 +10,9 @@
  *      History:
  ***********************************************************/
 
+# 使用extents进行类的继承; 
+# $this表示对象；parent表示父类；self表示当前类；
+
 class person {
     public $name;
     public $gender;
@@ -41,10 +44,13 @@ class family extends person {
     }
 }
 
-$poor = new family();
+$poor = new family(); //parent class person is called
+                      //sub class family is called
 $poor->name = 'Tom';
 $poor->gender = 'female';
 $poor->age = '25';
-$poor->say();
-$poor->cry();
+$poor->say(); //Tom is female
+              //Tom is female, and age is 25
+$poor->cry(); //parent's money: 10000
+              //self's money: 20000
 

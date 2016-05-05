@@ -16,6 +16,7 @@
 
 // 屏蔽所有错误信息
 //error_reporting(0);
+
 $date = "2012-12-20";
 if (ereg("([0-9]{4})-([0-9]{1,2})-([0-9]{1,2})", $date, $regs)) { //PHP Deprecated:  Function ereg() is deprecated
     echo "$regs[3].$regs[2].$regs[1]", PHP_EOL; //20.12.2012
@@ -31,9 +32,9 @@ $a = array('o' => 2, 4, 6, 8);
 echo $a[o]; //PHP Notice:  Use of undefined constant o - assumed 'o'
 echo PHP_EOL;
 $result = array_sum($a, 3); //PHP Warning:  array_sum() expects exactly 1 parameter, 2 given
+// 屏蔽函数执行过程中的错误信息(只会影响当前行的函数调用，不会影响后面的同名函数)
+$result = @array_sum($a, 3); //PHP Warning:  array_sum() expects exactly 1 parameter, 2 given
 echo fun(); //PHP Fatal error:  Call to undefined function fun()
-// 屏蔽函数执行过程中的错误信息
-echo @fun();
 echo '致命错误后面还会执行吗？';
 //echo '最高级别错误', $55; //PHP Parse error:  syntax error, unexpected '55' (T_LNUMBER), expecting variable (T_VARIABLE) or '$'
 

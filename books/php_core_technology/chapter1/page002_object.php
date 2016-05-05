@@ -23,19 +23,35 @@ class person {
 $student = new person();
 $student->name = 'Tom';
 $student->gender = 'male';
-$student->say();
+$student->say(); //Tom is male
 
 // 打印对象时，只会打印出对象中的属性, 因为对象只包含属性
 print_r((array)$student);
+/*
+Array
+(
+    [name] => Tom
+    [gender] => male
+)
+ */
+
 var_dump($student);
+/*
+object(person)#1 (2) {
+    ["name"]=>
+    string(3) "Tom"
+    ["gender"]=>
+    string(4) "male"
+}
+ */
 
 // 对象的序列化
 $str = serialize($student);
 echo $str . PHP_EOL; //O:6:"person":2:{s:4:"name";s:3:"Tom";s:6:"gender";s:4:"male";}
-file_put_contents('page2_output.txt', $str);
+file_put_contents('page002_output.txt', $str);
 
 // 对象的反序列化
-$str = file_get_contents('page2_output.txt');
+$str = file_get_contents('page002_output.txt');
 $student_test = unserialize($str);
-$student_test->say();
+$student_test->say(); //Tom is male
 

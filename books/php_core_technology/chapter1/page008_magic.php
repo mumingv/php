@@ -10,6 +10,9 @@
  *      History:
  ***********************************************************/
 
+# 如果类中没有对应的属性，则会调用对应的__get或__set函数; 
+# 这种方式相当于对外开放了访问private/protected属性的接口; 
+
 class Account {
     private $user = 'Tom';
     private $pwd = 2;
@@ -36,5 +39,5 @@ $a->pwd = 3; //自动调用__set函数
 echo $a->pwd . PHP_EOL; //输出：3
 echo $a->big . PHP_EOL; //default
 $a->name = 'Jay'; //public属性，不会触发__get或__set操作
-echo $a->name . PHP_EOL;
+echo $a->name . PHP_EOL; //Jay
 

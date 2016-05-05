@@ -10,6 +10,8 @@
  *      History:
  ***********************************************************/
 
+# 所谓反射，就是指根据对象获取对应类的对象和成员; 
+
 class person {
     public $name;
     public $gender;
@@ -42,10 +44,20 @@ $props = $reflect->getProperties();
 foreach($props as $prop) {
     print $prop->getName() . PHP_EOL;
 }
+/*
+name
+gender
+age
+ */
 
 // 获取对象的属性
 $methods = $reflect->getMethods();
 foreach($methods as $method) {
     print $method->getName() . PHP_EOL;
 }
+/*
+say
+__set
+__get
+ */
 
