@@ -10,6 +10,8 @@
  *      History:
  ***********************************************************/
 
+include_once("db_adapter.php");
+
 class Db_Adapter_Sqlite implements Db_Adapter {
     public function connect($config = null) {
         echo __CLASS__, " ",  __METHOD__, PHP_EOL;
