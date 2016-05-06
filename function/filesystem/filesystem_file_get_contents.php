@@ -1,7 +1,7 @@
 <?php
 /* =============================================================================
 #     FileName: filesystem_file_get_contents.php
-#         Desc: 将整个文件读入作为一个字符串
+#         Desc: 将整个文件(或URI)读入作为一个字符串
 #       Author: Jie Yin
 #        Email: mumingv@163.com
 #     HomePage: https://github.com/mumingv
@@ -13,7 +13,7 @@
 # 语法：string file_get_contents ( string $filename [, bool $use_include_path = false [, resource $context [, int $offset = -1 [, int $maxlen ]]]] )
 
 /**
- * 示例：读入文件并按行转换成数组, 然后再从数组元素中提取数据转换成json字符串
+ * 示例1：读入文件并按行转换成数组, 然后再从数组元素中提取数据转换成json字符串
  */
 // 读取文件内容，存放到字符串中
 $data_str = file_get_contents("data/school_special.txt");
@@ -48,4 +48,12 @@ foreach ($data_arr as $key => $value) {
     $line = json_encode($content, JSON_UNESCAPED_UNICODE) . "\n";
     file_put_contents('./data/school_special.output', $line, FILE_APPEND);
 }
+
+
+/**
+ * 示例2：读入URI
+ * $http_response_header是预定义变量, 用于存放HTTP响应头信息，是一个索引数组
+ */
+$html = file_get_contents('http://www.baidu.com/');
+print_r($http_response_header);
 
