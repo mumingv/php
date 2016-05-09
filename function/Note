@@ -18,6 +18,7 @@ misc            杂项函数：http://php.net/manual/zh/ref.misc.php
 network         网络函数：http://php.net/manual/en/ref.network.php
 regex(Not used) 正则表达式函数：http://php.net/manual/zh/ref.regex.php
 spl             SPL扩展： http://php.net/manual/zh/book.spl.php
+socket          socket函数：http://php.net/manual/zh/ref.sockets.php
 stream          流函数：  http://php.net/manual/zh/ref.stream.php
 string          字符串：  http://php.net/manual/zh/ref.strings.php
 variable        变量相关：http://php.net/manual/zh/ref.var.php
