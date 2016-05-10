@@ -40,6 +40,7 @@ $output_data = strrev($input_data) . "\n";
 socket_write($spawn, $output_data, strlen($output_data)) or die("Fail to write data!\n");
 
 // 关闭socket
+echo "Finished!\n";
 socket_close($spawn);
 socket_close($socket);
 
