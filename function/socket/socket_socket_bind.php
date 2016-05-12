@@ -11,6 +11,6 @@
  ***********************************************************/
 
 # 语法：bool socket_bind ( resource $socket , string $address [, int $port = 0 ] )
-# 参考：socket_socket_create.php
+# 参考：demo/socket_server.php
 
 

@@ -12,5 +12,5 @@
 
 # 语法：string socket_read ( resource $socket , int $length [, int $type = PHP_BINARY_READ ] )
 # 参数：$type的取值为PHP_BINARY_READ或者PHP_NORMAL_READ.
-# 参考：socket_socket_create.php
+# 参考：demo/socket_server.php
 

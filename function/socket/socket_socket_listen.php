@@ -12,5 +12,5 @@
 
 # 语法：bool socket_listen ( resource $socket [, int $backlog = 0 ] )
 # 参数：$backlog表示允许的最大连接数.
-# 参考：socket_socket_create.php
+# 参考：demo/socket_server.php
 

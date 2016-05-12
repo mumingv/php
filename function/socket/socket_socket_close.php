@@ -11,5 +11,5 @@
  ***********************************************************/
 
 # 语法：void socket_close ( resource $socket )
-# 参考：socket_socket_create.php
+# 参考：demo/socket_server.php
 
