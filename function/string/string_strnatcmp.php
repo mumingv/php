@@ -11,6 +11,7 @@
  ***********************************************************/
 
 # 语法：int strnatcmp ( string $str1 , string $str2 )
+# 说明：strnatcmp = string natural cpmpare
 
 # 示例：标准字符串比较函数与自然排序算法字符串比较函数的比较
 $arr1 = $arr2 = array("img12.png", "img10.png", "img2.png", "img1.png");

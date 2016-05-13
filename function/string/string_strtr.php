@@ -21,7 +21,7 @@ echo $result_str, PHP_EOL; //Hello Jayy!
 
 // from 与 to 长度不相等，那么多余的字符部分将被忽略
 $result_str = strtr("Hello Jack!", "ck", "y"); 
-echo $result_str, PHP_EOL; //Hello Jayy!
+echo $result_str, PHP_EOL; //Hello Jayk!
 
 $result_str = strtr("Hello Jack!", "Ho", "Yp"); 
 echo $result_str, PHP_EOL; //Yellp Jack!
