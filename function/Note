@@ -5,6 +5,7 @@ date-time.php   日期/时间类函数
 array               Finish   数组操作：http://php.net/manual/zh/ref.array.php
 class_object                 类和对象：http://php.net/manual/zh/ref.classobj.php
 ctype                        Cytpe函数：http://php.net/manual/zh/ref.ctype.php
+datetime                     日期时间函数：http://php.net/manual/zh/ref.datetime.php
 directory                    目录操作：http://php.net/manual/zh/book.dir.php
 error                        错误处理：http://php.net/manual/zh/ref.errorfunc.php
 exec                         程序执行：http://php.net/manual/zh/ref.exec.php
