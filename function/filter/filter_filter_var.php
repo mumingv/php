@@ -11,9 +11,11 @@
  ***********************************************************/
 
 # 语法：mixed filter_var ( mixed $variable [, int $filter = FILTER_DEFAULT [, mixed $options ]] )
+# 返回值：验证成功，返回$variable本身；验证失败，返回false
 
 # 示例：验证一个整数
 $int = 123;
+var_dump(filter_var($int, FILTER_VALIDATE_INT));
 if (!filter_var($int, FILTER_VALIDATE_INT)) {
     echo "Isn't a var\n";
 } else {
