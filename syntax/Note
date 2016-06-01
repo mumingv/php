@@ -1,3 +1,4 @@
+demo                    示例演示: 平常遇到的一些特殊语法示例
 class_object            类与对象：http://php.net/manual/zh/language.oop5.php
 flow_control            流程控制语句：http://php.net/manual/zh/language.control-structures.php
 magic_constant          魔术常量
