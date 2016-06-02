@@ -14,6 +14,7 @@
 # 说明：
 # 1. empty() 本质上与 !isset($var) || $var == false 等价;
 # 2. 当var存在，并且是一个非空非零的值时返回 FALSE 否则返回 TRUE;
+# 3. TRUE的判定：变量不存在 或者 整数0 或者 空字符串，empty都返回TRUE;
 
 # 示例
 $var = 0;
