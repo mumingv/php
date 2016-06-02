@@ -25,3 +25,10 @@ if (in_array("mac", $os)) {
     echo "Can't got mac" . PHP_EOL; //Can't got mac
 }
 
+// 数值型数据
+if (in_array(1, array(0, 1))) {
+    echo "1 is in array(0, 1)", PHP_EOL;
+} else {
+    echo "1 is not in array(0, 1)", PHP_EOL;
+}
+
