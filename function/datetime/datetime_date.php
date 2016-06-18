@@ -16,10 +16,15 @@
 // 需要设置默认时区，否则会有PHP WARNING
 date_default_timezone_set('UTC');
 $date = date("Y-m-d H:i:s");
-print_r($date); //2016-05-27 09:13:17
+print_r($date);  // 2016-05-27 09:13:17
 echo PHP_EOL;
 
 $date = date("Y-m-d H:i:s", time());
-print_r($date); //2016-05-27 09:13:17
+print_r($date);  // 2016-05-27 09:13:17
 echo PHP_EOL;
+
+$str = '2016-06-14 14:35:00';
+$date = date("m-d H:i", strtotime($str));
+print_r($date);
+echo PHP_EOL; 
 
