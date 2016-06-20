@@ -31,3 +31,9 @@ $foo = new foo;
 call_user_func_array(array($foo, "bar"), array("three", "four")); //foo::bar got three and four
 
 
+# 示例：
+function func1($id) {
+    echo __FUNCTION__, " process id is: ", $id;
+}
+call_user_func_array("func1", array(1, 2)); //func1 process id is: 1
+
