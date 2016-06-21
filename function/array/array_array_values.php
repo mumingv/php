@@ -14,6 +14,7 @@
 
 # 示例：
 $array = array("size" => "XL", "color" => "gold");
+echo(json_encode(array_values($array))."\n");  // ["XL","gold"]
 print_r(array_values($array));
 /*
 Array
