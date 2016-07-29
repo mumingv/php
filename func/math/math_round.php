@@ -17,4 +17,6 @@ $time = microtime(true);
 echo "time is: " . $time . PHP_EOL; //1460622618.2763
 $tm = round($time * 1000, 1);
 echo "tm is: " . $tm . PHP_EOL; //1460622618276.3
+$tm = round($time, 4);
+echo "tm is: " . $tm . PHP_EOL; //1460622618276.3
 
