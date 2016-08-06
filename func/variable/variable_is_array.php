@@ -13,6 +13,10 @@
 # 语法：bool is_array ( mixed $var )
 
 # 示例
+$var = false;
+var_export(is_array($var)); //false
+echo PHP_EOL;
+
 $arr = array();
 print_r(is_array($arr)); //1
 var_export(is_array($arr)); //true
