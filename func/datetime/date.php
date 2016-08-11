@@ -25,6 +25,10 @@ echo PHP_EOL;
 
 $str = '2016-06-14 14:35:00';
 $date = date("m-d H:i", strtotime($str));
-print_r($date);
+print_r($date);  // 06-14 14:35
+echo PHP_EOL; 
+
+$date = date('Y-m-d', strtotime("-1 day"));
+print_r($date);  // 2016-08-10
 echo PHP_EOL; 
 

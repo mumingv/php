@@ -30,6 +30,3 @@ $ret = strtotime($str);
 echo($ret);  // 1464737233
 echo PHP_EOL;
 
-
-
-
