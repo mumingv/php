@@ -5,9 +5,9 @@
     <body>
         <h1>Bob's Auto Parts</h1>
         <h2>Order Results</h2>
-<!-- PHP标记默认是此XML风格的 -->
-<?php
-    echo '<p>Order processed.</p>';
-?>
+<!-- PHP默认支持script风格的标记，无需对应的开关 -->
+<script language="php">
+        echo '<p>Order processed.</p>';
+</script>
     </body>
 </html>
