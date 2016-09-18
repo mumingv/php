@@ -1,0 +1,2 @@
+php.ini             bdp中php的原始配置文件, PHP版本: 5.4.41
+php.ini.comment     bdp中php的原始配置文件(增加了注释), PHP版本: 5.4.41
