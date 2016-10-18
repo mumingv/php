@@ -61,5 +61,47 @@ foreach ($products as $key => $product) {
 }
 
 
+## 3.3 关联数组
+
+### 3.3.1 初始化关联数组
+
+// 自动创建方式
+$prices = array();
+$prices['Tires'] = 100;
+$prices['Oil'] = 10;
+$prices['Spark Plugs'] = 4;
+print_r($prices);
+
+// 使用array
+$prices = array(
+    'Tires' => 100,
+    'Oil' => 10,
+    'Spark Plugs' => 4,
+);
+print_r($prices);
+
+
+### 3.3.2 访问数据元素
+echo $prices['Oil'].PHP_EOL;
+
+
+### 3.3.3 使用循环语句
+
+// foreach循环
+foreach ($prices as $key => $value) {
+    echo $key.' => '.$value.PHP_EOL;
+}
+
+// while循环配合each()函数
+reset($prices);
+while ($element = each($prices)) {
+    echo $element['key'].' => '.$element['value'].PHP_EOL;
+}
+
+// while循环配合each()和list()函数
+reset($prices);
+while (list($product, $price) = each($prices)) {
+    echo $product.' => '.$price.PHP_EOL;
+}
 
 
