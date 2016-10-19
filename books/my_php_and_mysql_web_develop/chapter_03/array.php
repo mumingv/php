@@ -262,7 +262,7 @@ $products = array('Tires', 'Oil', 'Spark Plugs');
 array_walk($products, 'my_print');
 
 function my_string($value, $key, $userData) {
-    echo $userData.' '.$value.PHP_EOL;
+    echo $key.' => '.$value.' '.$userData.PHP_EOL;
 }
 $products = array('Tires', 'Oil', 'Spark Plugs');
 array_walk($products, 'my_string', 0);
