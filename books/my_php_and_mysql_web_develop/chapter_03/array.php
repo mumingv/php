@@ -223,7 +223,56 @@ asort($prices);
 print_r($prices);
 
 
+## 多维数组排序
+function compare($x, $y) {
+    if ($x[1] == $y[1]) {
+        return 0;
+    } else if ($x[1] < $y[1]) {
+        return -1;
+    } else {
+        return 1; 
+    }
+}
+
+$products = array(
+    array('TIR', 'Tires', 100),
+    array('OIL', 'Oil', 10),
+    array('SPK', 'Spark Plugs', 4),
+);
+usort($products, 'compare');
+print_r($products);
 
 
+## 对数组进行重新排序
+$products = array('Tires', 'Oil', 'Spark Plugs');
+shuffle($products);
+print_r($products);
+
+
+$numbers = range(1, 10);
+$numbers = array_reverse($numbers);
+print_r($numbers);
+
+
+## 执行其他数组操作
+function my_print($value) {
+    echo $value.PHP_EOL;
+}
+$products = array('Tires', 'Oil', 'Spark Plugs');
+array_walk($products, 'my_print');
+
+function my_string($value, $key, $userData) {
+    echo $userData.' '.$value.PHP_EOL;
+}
+$products = array('Tires', 'Oil', 'Spark Plugs');
+array_walk($products, 'my_string', 0);
+
+$prices = array(
+    'Tires' => 100,
+    'Oil' => 10,
+    'Spark Plugs' => 4,
+);
+extract($prices);
+echo $Tires.' '.$Oil;
 
 
