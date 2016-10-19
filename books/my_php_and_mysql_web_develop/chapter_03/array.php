@@ -105,3 +105,125 @@ while (list($product, $price) = each($prices)) {
 }
 
 
+## 3.5 多维数组
+
+
+### 二维数组创建
+
+$products2[0][0] = 'TIR';
+$products2[0][1] = 'Tires';
+$products2[0][2] = 100;
+$products2[1][0] = 'OIL';
+$products2[1][1] = 'Oil';
+$products2[1][2] = 10;
+$products2[2][0] = 'SPK';
+$products2[2][1] = 'Spark Plugs';
+$products2[2][2] = 4;
+print_r($products2);
+
+$products = array(
+    array('TIR', 'Tires', 100),
+    array('OIL', 'Oil', 10),
+    array('SPK', 'Spark Plugs', 4),
+);
+echo $products[1][2].PHP_EOL;
+print_r($products);
+
+for ($row = 0; $row < 3; $row++) {
+    for ($column = 0; $column < 3; $column++) {
+        echo '|'.$products[$row][$column]; 
+    }
+    echo '|'.PHP_EOL;
+}
+
+
+### 数字索引&关联混合数组
+
+$products = array(
+    array(
+        'Code' => 'TIR',
+        'Description' => 'Tires',
+        'Price' => 100),
+    array(
+        'Code' => 'OIL', 
+        'Description' => 'Oil',
+        'Price' => 10),
+    array(
+        'Code' => 'SPK',
+        'Description' => 'Spark Plugs',
+        'Price' => 4),
+);
+print_r($products);
+
+echo $products[1]['Price'].PHP_EOL;
+
+
+for ($row = 0; $row < 3; $row++) {
+    while (list($key, $value) = each($products[$row])) {
+        echo $key.' => '.$value."\t"; 
+    }
+    echo PHP_EOL;
+}
+
+
+### 三维数组
+
+$products = array(array(array('CAR_TIR', 'Tires', 100),
+                        array('CAR_OIL', 'Oil', 10),
+                        array('CAR_SPK', 'Spark Plugs', 4),
+                        ),
+                  array(array('VAN_TIR', 'Tires', 101),
+                        array('VAN_OIL', 'Oil', 11),
+                        array('VAN_SPK', 'Spark Plugs', 5),
+                        ),
+                  array(array('TRK_TIR', 'Tires', 102),
+                        array('TRK_OIL', 'Oil', 12),
+                        array('TRK_SPK', 'Spark Plugs', 6),
+                        ),
+);
+print_r($products);
+
+echo $products[1][2][2].PHP_EOL;
+
+for ($layer = 0; $layer < 3; $layer++) {
+    echo 'layer '.$layer.PHP_EOL;
+    for ($row = 0; $row < 3; $row++) {
+        for ($column = 0; $column < 3; $column++) {
+            echo '|'.$products[$layer][$row][$column];
+        }
+        echo '|'.PHP_EOL;
+    }    
+}
+
+
+
+## 数组排序
+
+### 使用sort()函数
+
+$products = array('Tires', 'Oil', 'Spark Plugs');
+sort($products);
+print_r($products);
+
+$products = array('2', '16', '12');
+sort($products, SORT_STRING);
+print_r($products);
+
+
+### 使用`asort()`函数和`ksort()`函数（关联数组排序）
+$prices = array(
+    'Tires' => 100,
+    'Oil' => 10,
+    'Spark Plugs' => 4,
+);
+ksort($prices);
+print_r($prices);
+
+asort($prices);
+print_r($prices);
+
+
+
+
+
+
