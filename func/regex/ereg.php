@@ -12,8 +12,11 @@
 
 # 语法：int ereg ( string $pattern , string $string [, array &$regs ] )
 
-$date = '2016-05-04';
-if (ereg ("([0-9]{4})-([0-9]{1,2})-([0-9]{1,2})", $date, $regs)) {
+$date = 'The date is: 2016-05-04.';
+$ret = ereg("([0-9]{4})-([0-9]{1,2})-([0-9]{1,2})", $date, $regs);
+echo '$ret => '.$ret.PHP_EOL;
+echo '$regs[0] => '.$regs[0].PHP_EOL;
+if ($ret) {
        echo "$regs[3].$regs[2].$regs[1]", PHP_EOL; //04.05.2016
 } else {
        echo "Invalid date format: $date", PHP_EOL;
