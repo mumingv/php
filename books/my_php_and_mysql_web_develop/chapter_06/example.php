@@ -141,6 +141,7 @@ $banana->getColor();
 
 
 // 多个接口
+/*
 class Fruit {
     public function info() {
         echo "I'm a fruit".PHP_EOL;
@@ -155,7 +156,6 @@ interface Fruit2 {
     public function getColor();  // 获取大小
 }
 
-
 class Apple extends Fruit implements Fruit1, Fruit2 {
     public function getSize() {
         echo 'Apple is big'.PHP_EOL;
@@ -169,12 +169,54 @@ $apple = new Apple();
 $apple->info();
 $apple->getSize();
 $apple->getColor();
+ */
+
+// Per-Class常量
+/*
+class Math {
+    const PI = 3.14159;
+}
+echo 'Math::PI = '.Math::PI.PHP_EOL;
+ */
+
+// static方法
+/*
+class Math {
+    static function squared($num) {
+        return ($num * $num);
+    }
+}
+echo Math::squared(6);
+ */
 
 
+// 检查类的类型和类型提示
+/*
+class A {
+    public $attribute1;
+    public function operation1() {
+        echo 'In class '.__CLASS__.', $attribute1 is '.$this->attribute1.PHP_EOL; 
+    }
+}
+
+class B extends A {
+    public $attribute2;
+    public function operation2() {
+        echo 'In class '.__CLASS__.', $attribute2 is '.$this->attribute2.PHP_EOL; 
+    }
+}
+
+function display(B $obj) {
+    $obj->operation2();
+}
+
+$a = new A();
+$b = new B();
+display($a);
+ */
 
 
-
-
+// 延迟静态绑定
 
 
 
