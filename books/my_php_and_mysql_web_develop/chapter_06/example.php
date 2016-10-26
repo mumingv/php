@@ -217,6 +217,146 @@ display($a);
 
 
 // 延迟静态绑定
+/*
+class A {
+    static public function who() {
+        echo 'In class '.__CLASS__.PHP_EOL; 
+    }
+    static public function test() {
+        static::who();  // 延迟静态绑定
+    }
+}
+
+class B extends A {
+    static public function who() {
+        echo 'In class '.__CLASS__.PHP_EOL; 
+    }
+    static public function test() {
+        static::who();  // 延迟静态绑定
+    }
+}
+
+A::who();
+A::test();
+
+B::who();
+B::test();
+ */
+
+
+/*
+class A {
+    public function who() {
+        echo 'In class '.__CLASS__.PHP_EOL; 
+    }
+    public function test() {
+        $this->who();  // 未使用延迟静态绑定
+    }
+}
+
+class B extends A {
+    public function who() {
+        echo 'In class '.__CLASS__.PHP_EOL; 
+    }
+}
+
+$a = new A();
+$a->who();
+$a->test();
+
+$b = new B();
+$b->who();
+$b->test();
+*/
+
+
+// clone
+/*
+class SubObject
+{
+    static $instances = 0;
+    public $instance;
+
+    public function __construct() {
+        $this->instance = ++self::$instances;
+    }
+
+    // 在类SubObject的对象被clone时，由复制生成的对象调用
+    public function __clone() {
+        $this->instance = ++self::$instances;
+    }
+}
+
+class MyCloneable
+{
+    public $object1;
+    public $object2;
+
+    function __clone()
+    {
+        // 强制复制一份this->object， 否则仍然指向同一个对象
+        $this->object1 = clone $this->object1;
+    }
+}
+
+$obj = new MyCloneable();
+$obj->object1 = new SubObject();
+$obj->object2 = new SubObject();
+print("Original Object:\n");
+print_r($obj);
+
+$obj2 = clone $obj;
+print("Cloned Object:\n");
+print_r($obj2);
+ */
+
+// abstract
+abstract class AbstractClass
+{
+    // 强制要求子类定义这些方法
+    abstract protected function getValue();
+    abstract protected function prefixValue($prefix);
+
+    // 普通方法（非抽象方法）
+    public function printOut() {
+        print $this->getValue() . "\n";
+    }
+}
+
+class ConcreteClass1 extends AbstractClass
+{
+    protected function getValue() {
+        return "ConcreteClass1";
+    }
+
+    public function prefixValue($prefix) {
+        return "{$prefix}ConcreteClass1";
+    }
+}
+
+class ConcreteClass2 extends AbstractClass
+{
+    public function getValue() {
+        return "ConcreteClass2";
+    }
+
+    public function prefixValue($prefix) {
+        return "{$prefix}ConcreteClass2";
+    }
+}
+
+$class1 = new ConcreteClass1;
+$class1->printOut();
+echo $class1->prefixValue('FOO_') ."\n";
+
+$class2 = new ConcreteClass2;
+$class2->printOut();
+echo $class2->prefixValue('FOO_') ."\n";
+
+
+
+
+
 
 
 
