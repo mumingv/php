@@ -7,8 +7,8 @@ class MusicContainerMediator {
     protected $_containers = array();
 
     public function __construct() {
-        $_containers[] = 'CD';
-        $_containers[] = 'MP3Archive';
+        $this->_containers[] = 'CD';
+        $this->_containers[] = 'MP3Archive';
     }
 
     // 中介者需要知道哪类对象做了哪些改变
@@ -19,9 +19,11 @@ class MusicContainerMediator {
                 $obj->band = $originalObject->band;
                 $obj->title = $originalObject->title;
 
-                foreach ($newValues as $key => $value) {}
+                foreach ($newValues as $key => $value) {
+                    $obj->$key = $value;
+                }
+                $obj->save();
             }
-             
         }
     }
 }

@@ -14,6 +14,7 @@ class MP3Archive {
     // 将MP3Archive类对象保存到数据库
     public function save() {
         // 具体保存步骤（略）
+        echo "In class ".__CLASS__."\n";
         var_dump($this); 
     }
     

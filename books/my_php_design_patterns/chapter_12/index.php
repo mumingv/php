@@ -4,11 +4,19 @@
  */
 
 require_once('CD.php');
-require_once('CDVisitorLogPurchase.php');
-require_once('CDVisitorPopulateDiscountList.php');
+require_once('MP3Archive.php');
+require_once('MusicContainerMediator.php');
 
-date_default_timezone_set('UTC');
-$cdObj = new CD('Beyond', '光辉岁月', 10);
-$cdObj->buy();
-$cdObj->acceptVistor(new CDVisitorLogPurchase());
-$cdObj->acceptVistor(new CDVisitorPopulateDiscountList());
+// 创建对象时未指定中介对象
+$mediator = new MusicContainerMediator();
+$cdObj = new CD();
+$cdObj->band = 'beyond';
+$cdObj->title = '光辉岁月';
+$cdObj->changeBandName('真的爱你');
+
+// 创建对象时指定中介对象
+$mediator = new MusicContainerMediator();
+$cdObj = new CD($mediator);
+$cdObj->band = 'beyond';
+$cdObj->title = '光辉岁月';
+$cdObj->changeBandName('真的爱你');
