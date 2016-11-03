@@ -11,7 +11,7 @@ class User {
 
     // 获取信息，其中包含待解释替换的配置
     public function getProfilePage() {
-        $profile = "I like many songs\n";
+        $profile = "I like many songs.\n";
         $profile .= "My favorite CD is: {{myCD.getTitle}}";
         return $profile;
     }
