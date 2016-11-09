@@ -13,6 +13,8 @@ abstract class BaseDao {
     private function __connectToDB($user, $pass, $host, $database) {
         // 1. 数据库操作第一步：连接数据库
         $this->__connection = mysql_connect($host, $user, $pass);
+        // 2. 数据库操作第二步：选择数据库
+        mysql_select_db($database, $this->__connection);
     }
 
     // 根据主键的值进行查询
@@ -23,11 +25,11 @@ abstract class BaseDao {
             $key = $this->_primaryKey;
         }
 
-        // 2. 数据库操作第二步：查询数据库
-        $sql = "SELECT * FROM {$this->_tableName} WHERE {$key} = {$value}";
+        // 3. 数据库操作第三步：查询数据库
+        $sql = "SELECT * FROM {$this->_tableName} WHERE {$key} = '{$value}'";
         $results = mysql_query($sql, $this->__connection);
 
-        // 3. 数据库操作第三步：将查询结果转换为数组形式
+        // 3. 数据库操作第四步：将查询结果转换为数组形式
         $rows = array();
         while ($result = mysql_fetch_array($results)) {
             $rows[] = $result;
