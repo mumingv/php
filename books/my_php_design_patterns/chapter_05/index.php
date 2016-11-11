@@ -9,7 +9,8 @@ require_once('User.php');
 // 下面这些配置需要放在配置文件中
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
-define('DB_PASS', 'Mysql2016!');
+$password = trim(file_get_contents('config.passwd'));
+define('DB_PASS', $password);
 define('DB_DATABASE', 'pdp');
 
 // 主程序
