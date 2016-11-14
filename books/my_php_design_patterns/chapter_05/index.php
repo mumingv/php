@@ -3,6 +3,10 @@
  * 主程序 
  */
 
+// [重要说明]本实例涉及数据库操作，注意如下两点：
+// 1. 数据库为pdp，备份在backup目录中；
+// 2. 数据库密码，存放在config.passwd文件中；
+
 require_once('BaseDao.php');
 require_once('User.php');
 
