@@ -24,6 +24,9 @@ class InventoryDB {
 
     public function updateQuantity($band, $title, $number) {
         // 更新
+        $band = mysql_real_escape_string($band);
+        $title = mysql_real_escape_string($title);
+        $number = mysql_real_escape_string($number);
         $query = "UPDATE `c15_cd` SET `bought` = `bought` + {$number} WHERE `band` = '{$band}' AND `title` = '{$title}'";
         mysql_query("SET NAMES 'utf8'");
         mysql_query($query, $this->_handle);
