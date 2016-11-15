@@ -4,9 +4,7 @@
  */
 class CDMakeXML {
     public static function create(CD $cd) {
-        var_dump($cd);
         // Q: new一个对象时，是否加括号有区别么？
-        /*
         $doc = new DomDocument();
 
         $root = $doc->createElement('CD');
@@ -26,6 +24,5 @@ class CDMakeXML {
             $track = $tracks->appendChild($track);
         }
         return $doc->saveXML();
-         */
     }
 }
