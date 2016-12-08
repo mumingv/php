@@ -17,6 +17,7 @@ json                         JSON函数：http://php.net/manual/zh/ref.json.php
 math                         数学函数：http://php.net/manual/zh/ref.math.php
 mbstring                     多字节字符串：http://php.net/manual/en/book.mbstring.php
 misc                         杂项函数：http://php.net/manual/zh/ref.misc.php
+mysql                        MySQL函数：http://php.net/manual/zh/ref.mysql.php
 network                      网络函数：http://php.net/manual/en/ref.network.php
 regex(Not used)              正则表达式函数：http://php.net/manual/zh/ref.regex.php
 spl                          SPL扩展： http://php.net/manual/zh/book.spl.php
