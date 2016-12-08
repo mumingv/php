@@ -19,6 +19,36 @@ $var1 = "Hello world!";
 echo($var1);
 echo PHP_EOL;
 
+/**
+ * 字符串 
+ */
+echo "\n\n---Begin of String---\n";
+
+$str = "Hello World!";
+echo($str.PHP_EOL);
+
+$str = 'Hello World!';
+echo($str.PHP_EOL);
+
+$name = 'Jay';
+echo('My name is $name!\n');
+echo("My name is $name!\n");
+
+$user = array(
+    "name" => "Jay",
+    "gender" => "male",
+);
+echo "My name is {$user['name']}, gender is {$user['gender']}.\n";
+echo "My name is ".$user['name'].", gender is ".$user['gender'].".\n";
+
+$str = "Hello World!";
+$length = strlen($str);
+for ($i = 0; $i < $length; $i++) {
+    echo "{$str[$i]}\n";
+}
+
+echo "\n\n---End of String---\n";
+
 
 /**
  * 循环
