@@ -1,4 +1,7 @@
-注：各文件单独运行。
 
+multi_namespace_4.php       定义多个命名空间和不包含在命名空间中的代码
+
+===================================
+注：各文件单独运行。
 $ php multi_namespace.php
 $ php multi_namespace_2.php
