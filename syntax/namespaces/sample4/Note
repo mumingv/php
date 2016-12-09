@@ -1,0 +1,4 @@
+注：各文件单独运行。
+
+$ php multi_namespace.php
+$ php multi_namespace_2.php
