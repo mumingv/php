@@ -4,4 +4,5 @@ sample4     同一个文件中定义多个命名空间
 use_sample1 使用命名空间的示例
 use_sample2 命名空间与动态语言特征
 use_sample3 namespace关键字和__NAMESPACE__常量
+use_sample4 使用命名空间：别名/导入
 

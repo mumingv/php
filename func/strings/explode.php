@@ -28,3 +28,13 @@ echo $gecos . PHP_EOL; //
 echo $home . PHP_EOL; ///home/foo
 echo $shell . PHP_EOL; ///bin/sh
 
+
+/**
+ * 中文字符串分割
+ */
+$str = "我爱北京天安门，哈哈。你好啊！";  
+print_r (explode("。",$str));  
+
+$str = "I am a stutdent. Right?";
+print_r (explode(" ",$str));  
+

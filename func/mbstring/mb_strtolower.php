@@ -1,16 +1,16 @@
 <?php
 /***********************************************************
- *     FileName: mbstring_mb_strtolower.php
+ *     FileName: mb_strtolower.php
  *         Desc: 使字符串小写(所有字符都小写)
  *       Author: Jie Yin
  *        Email: mumingv@163.com
  *     HomePage: https://github.com/mumingv
  *      Version: 0.0.1
- *   LastChange: 2016-03-26 07:12:37
+ *   LastChange: 2016-12-12 14:49:22
  *      History:
  ***********************************************************/
 
-# 语法：string mb_strtolower ( string $str [, string $encoding = mb_internal_encoding() ] )
+# 语法：mb_strtolower ( string $str [, string $encoding = mb_internal_encoding() ] )
 
 # 示例
 $str = "Mary Had A Little Lamb and She LOVED It So";
