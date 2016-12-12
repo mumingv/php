@@ -37,12 +37,34 @@ function curl_get($url, array $get = array(), array $options = array())
 } 
 
 /**
- *  
+ * 通过GET接口获取数据 
  */
 $url = 'http://123.56.21.232:8254/myprojects/demo/get_json_data.php';
 $data = curl_get($url);
 $data = json_decode($data, true);
 echo "---->获取的数据：\n";
 print_r($data);
+
+
+/**
+ * 使用标点符号分割文本，返回分割后的字符串数组
+ */
+function mbStringSplit($string) {
+    mb_regex_encoding('UTF-8');
+    mb_internal_encoding("UTF-8"); 
+    $result = mb_split('。|！|？', $string); 
+    if ((count($result) > 0) && (strlen(end($result)) == 0)) {
+        array_pop($result);
+    }
+    return $result;
+}
+foreach ($data as $key => $string) {
+    $data[$key] = mbStringSplit($string); 
+}
+echo "---->分割的数据：\n";
+print_r($data);
+
+
+
 
 
