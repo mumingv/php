@@ -39,7 +39,7 @@ function curl_get($url, array $get = array(), array $options = array())
 /**
  * 通过GET接口获取数据 
  */
-$url = 'http://testsidewear.baidu.com/voicesearch?word=娱乐新闻&product=news&uuid=2556452&pn=1';
+$url = 'http://testsidewear.baidu.com/voicesearch?word=娱乐新闻&product=news&uuid=2556452&pn=2';
 $data = curl_get($url);
 $data = json_decode($data, true);
 echo "---->获取的数据：\n";
@@ -49,6 +49,7 @@ print_r($data);
 /**
  * 使用标点符号分割文本，返回分割后的字符串数组
  */
+/*
 function mbStringSplit($string) {
     mb_regex_encoding('UTF-8');
     mb_internal_encoding("UTF-8"); 
@@ -65,7 +66,7 @@ foreach ($data['result'] as $id => $news) {
 }
 echo "---->分割的数据：\n";
 print_r($data);
-
+ */
 
 
 
