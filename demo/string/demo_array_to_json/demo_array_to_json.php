@@ -13,4 +13,4 @@
 $arr_str = file_get_contents('input');
 eval('$arr ='.$arr_str.';');
 //$arr['foo'] = 'bar';  // 测试：向数组中插入一个字段
-file_put_contents('output', json_encode($arr));
+file_put_contents('output', json_encode($arr, JSON_UNESCAPED_UNICODE));
