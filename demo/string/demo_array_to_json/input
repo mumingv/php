@@ -76,32 +76,32 @@ array (
       1 => 
       array (
         'query' => '打开音乐广播',
-        'type' => 'live',
+        'type' => 'news',
         'result_list' => 
         array (
           0 => 
           array (
-            'type' => 'live',
+            'type' => 'news',
             'score' => 61,
             'result_list' => 
             array (
               0 => 
               array (
-                'type' => 'audio.live.play',
+                'type' => 'audio.news.play',
                 'score' => 0,
                 'content' => '{"from_star_atlas":1}',
                 'result_list' => 
                 array (
                   0 => 
                   array (
-                    'key' => 'channel',
+                    'key' => 'region',
                     'type' => 'text',
                     'value' => 
                     array (
                       0 => 
                       array (
-                        'value' => '北京文艺广播',
-                        'name' => 'channel',
+                        'value' => '北京',
+                        'name' => 'region',
                         'source' => 'query',
                         'type' => 'string',
                         'tag_op' => 1,
@@ -112,14 +112,14 @@ array (
                   ),
                   1 => 
                   array (
-                    'key' => 'province',
+                    'key' => 'category',
                     'type' => 'text',
                     'value' => 
                     array (
                       0 => 
                       array (
-                        'value' => '北京',
-                        'name' => 'province',
+                        'value' => '娱乐',
+                        'name' => 'category',
                         'source' => 'query',
                         'type' => 'string',
                         'tag_op' => 1,
@@ -130,14 +130,14 @@ array (
                   ),
                   2 => 
                   array (
-                    'key' => 'category',
+                    'key' => 'sort_type',
                     'type' => 'text',
                     'value' => 
                     array (
                       0 => 
                       array (
-                        'value' => '文艺',
-                        'name' => 'category',
+                        'value' => 'sort_new',
+                        'name' => 'sort_type',
                         'source' => 'query',
                         'type' => 'string',
                         'tag_op' => 1,
