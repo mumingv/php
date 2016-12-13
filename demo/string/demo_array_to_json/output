@@ -1,0 +1,203 @@
+array (
+  'user_id' => 'qa_test_debug_renronghuan_debug_monitor',
+  'baiduid' => '',
+  'dumi_id' => '',
+  'cuid' => 'qa_test_debug_renronghuan_debug_monitor',
+  'query' => '打开音乐广播',
+  'raw_query' => '打开音乐广播',
+  'rewrite_query_type' => 'no_rewrite',
+  'version' => 1,
+  'msg' => 
+  array (
+    'debug' => 1,
+    'operation_system' => 'android',
+    'app_ver' => '8.1.0',
+    'from' => 'shoubai',
+    'query_type' => '1',
+    'request_uid' => '',
+    'request_from' => '0',
+    'request_type' => 'xiaodu',
+    'sample_name' => 'bear_brain_wireless',
+    'latitude' => 40.0512,
+    'longitude' => 116.281,
+    'service_id' => '183',
+    'hint_id' => '',
+    'CUID' => 'renronghuan_debug_monitor',
+    'effect' => 1,
+    'user_id' => 'renronghuan_debug_monitor',
+  ),
+  'log_id' => 'uniq_id_ABCDEFG',
+  'request_type' => 'xiaodu',
+  'params' => 
+  array (
+    'loc' => '%7B%22crd%22%3A%2212944567.539994_4845574.592194_200%22%2C%22city%22%3A%22%5Cu5317%5Cu4eac%5Cu5e02%22%2C%22addr%22%3A%22%5Cu5317%5Cu4eac%5Cu5e02%5Cu6d77%5Cu6dc0%5Cu533a%5Cu8f6f%5Cu4ef6%5Cu56ed%5Cu897f%5Cu8def%22%7D',
+    'cip' => '1.2.2.1',
+    'bear_params' => 
+    array (
+      'nlu_response' => '{"analysis":{},"parsed_text":"打开 音乐 广播","raw_text":"打开音乐广播","results":[{"demand":0,"domain":"human_talk_in","intent":"search","object":{},"pushleft_switch":"0","score":1.0,"str_result_content":{},"str_result_type":""},{"demand":0,"domain":"universal_search","intent":"search","object":{},"pushleft_switch":"0","score":0.7723807096481323,"str_result_content":{},"str_result_type":""}],"sugs":"打开音乐广播","sugs_types":"PAT_EC"}
+',
+    ),
+    'ua' => 'Mozilla/5.0 (Linux; Android 4.4.2; Nexus5 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 baiduboxapp/7.3.1 (Baidu; P1 5.0.2) voiceplugin/1.0. 4.0 (Android 5.0.2; F103 1462956067)',
+    'client_from' => 'shoubai',
+    'intervene_from' => 'wireless',
+    'sc_response' => '{}',
+    'debug_info' => 'time=1481115174',
+  ),
+  'page_cnt' => 10,
+  'page_num' => 1,
+  'data' => 
+  array (
+    'status' => 0,
+    'msg' => 'OK',
+    'da_query_info' => 
+    array (
+      0 => 
+      array (
+        'type' => 'rsse',
+        'result_list' => 
+        array (
+          0 => 
+          array (
+            'type' => 'rssequery',
+            'score' => 0,
+            'result_list' => 
+            array (
+              0 => 
+              array (
+                'type' => 'querylist',
+                'score' => 0,
+                'content' => '["android 蓝牙打开广播","android wifi打开广播","安卓 广播 打开应用","打开ssid广播","河北音乐广播","七彩阳光广播体操音乐","北京音乐广播","天津音乐广播","背景音乐广播系统","河北音乐广播在线收听"]
+',
+              ),
+            ),
+          ),
+        ),
+      ),
+      1 => 
+      array (
+        'query' => '打开音乐广播',
+        'type' => 'live',
+        'result_list' => 
+        array (
+          0 => 
+          array (
+            'type' => 'live',
+            'score' => 61,
+            'result_list' => 
+            array (
+              0 => 
+              array (
+                'type' => 'audio.live.play',
+                'score' => 0,
+                'content' => '{"from_star_atlas":1}',
+                'result_list' => 
+                array (
+                  0 => 
+                  array (
+                    'key' => 'channel',
+                    'type' => 'text',
+                    'value' => 
+                    array (
+                      0 => 
+                      array (
+                        'value' => '北京文艺广播',
+                        'name' => 'channel',
+                        'source' => 'query',
+                        'type' => 'string',
+                        'tag_op' => 1,
+                        'session_num' => 0,
+                      ),
+                    ),
+                    'score' => 100,
+                  ),
+                  1 => 
+                  array (
+                    'key' => 'province',
+                    'type' => 'text',
+                    'value' => 
+                    array (
+                      0 => 
+                      array (
+                        'value' => '北京',
+                        'name' => 'province',
+                        'source' => 'query',
+                        'type' => 'string',
+                        'tag_op' => 1,
+                        'session_num' => 0,
+                      ),
+                    ),
+                    'score' => 100,
+                  ),
+                  2 => 
+                  array (
+                    'key' => 'category',
+                    'type' => 'text',
+                    'value' => 
+                    array (
+                      0 => 
+                      array (
+                        'value' => '文艺',
+                        'name' => 'category',
+                        'source' => 'query',
+                        'type' => 'string',
+                        'tag_op' => 1,
+                        'session_num' => 0,
+                      ),
+                    ),
+                    'score' => 100,
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
+      ),
+    ),
+    'params' => 
+    array (
+      0 => 
+      array (
+        'key' => 'mmsda_response',
+        'value' => '{"voiceguidesidentify":{"is_fullreplace":false, "fullreplace_query":"", "last_query":"打开音乐广播", "fullreplace_strategy":0, "strategy_type":0}, "wise_rewrite":{"res":[], "normalize":[]}}',
+      ),
+      1 => 
+      array (
+        'key' => 'vsda_response',
+        'value' => '{"status_code":0, "status_msg":"", "element_results":[{"analysis_result":67108864, "service_vertical_result":[{}], "service_duolun_result":[{"concept_list":[{"concept_id":"", "concept_name":"打开音乐广播", "type_id":"", "type_name":"memorycontent", "concept_text":"", "rank_weight":0, "index":0, "len":12}, {"concept_id":"", "concept_name":"打开_音乐_广播", "type_id":"", "type_name":"memorywords", "concept_text":"", "rank_weight":0, "index":0}]}]}]}',
+      ),
+      2 => 
+      array (
+        'key' => 'qu_service_single_response',
+        'value' => '{"status":0, "timestamp":0, "raw_query":"打开音乐广播", "intent_candidates":[{"intent":"0", "intent_confidence":0, "func_slot":"", "slots":[{"offset":-1, "length":-1, "original_word":"", "normalized_word":"", "type":"", "confidence":0, "word_type":""}], "extra_info":{"parser_qu_da_sug":""}}]}',
+      ),
+      3 => 
+      array (
+        'key' => 'gssda_response',
+        'value' => '{"result":[{"normal":{"danormalanalysis":{"query_composition":"", "dummy":0}, "dummy":0}}]}',
+      ),
+      4 => 
+      array (
+        'key' => 'qu_responce',
+        'value' => '{"err_no":0, "result":[{"normal":{}, "qu":{"query_voice":{"res":[]}}, "queryId":1}]}',
+      ),
+      5 => 
+      array (
+        'key' => 'da_sug_query',
+        'value' => '{"log_id":"uniq_id_ABCDEFG","query":"打开音乐广播","rewrite_query_type":"no_rewrite"}
+',
+      ),
+      6 => 
+      array (
+        'key' => 'personal_com_query',
+        'value' => '{"home":"","office":"","offset":0,"query":"","type":""}
+',
+      ),
+      7 => 
+      array (
+        'key' => 'nlu_responce',
+        'value' => '{"analysis":{},"parsed_text":"打开 音乐 广播","raw_text":"打开音乐广播","results":[{"demand":0,"domain":"human_talk_in","intent":"search","object":{},"pushleft_switch":"0","score":1.0,"str_result_content":{},"str_result_type":""},{"demand":0,"domain":"universal_search","intent":"search","object":{},"pushleft_switch":"0","score":0.7723807096481323,"str_result_content":{},"str_result_type":""}],"sugs":"打开音乐广播","sugs_types":"PAT_EC"}
+',
+      ),
+    ),
+  ),
+)
