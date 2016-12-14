@@ -51,6 +51,17 @@ echo "\n\n---End of String---\n";
 
 
 /**
+ * 数组 
+ */
+echo "\n\n---Begin of Array---\n";
+
+$arr = ['Apple', 'Oragnge'];
+print_r($arr);
+
+echo "\n\n---End of Array---\n";
+
+
+/**
  * 循环
  */
 
