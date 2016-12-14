@@ -5,6 +5,7 @@ date-time.php   日期/时间类函数
 array               Finish   数组操作：http://php.net/manual/zh/ref.array.php
 class_object                 类和对象：http://php.net/manual/zh/ref.classobj.php
 ctype                        Cytpe函数：http://php.net/manual/zh/ref.ctype.php
+curl                         CURL函数：http://php.net/manual/zh/ref.curl.php
 datetime                     日期时间函数：http://php.net/manual/zh/ref.datetime.php
 directory                    目录操作：http://php.net/manual/zh/book.dir.php
 error                        错误处理：http://php.net/manual/zh/ref.errorfunc.php
@@ -24,5 +25,6 @@ spl                          SPL扩展： http://php.net/manual/zh/book.spl.php
 socket                       socket函数：http://php.net/manual/zh/ref.sockets.php
 stream                       流函数：  http://php.net/manual/zh/ref.stream.php
 strings                      字符串：  http://php.net/manual/zh/ref.strings.php
+url                          URL函数： http://php.net/manual/zh/ref.url.php
 variable                     变量相关：http://php.net/manual/zh/ref.var.php
 
