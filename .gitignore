@@ -4,3 +4,5 @@ test.txt
 *.swo
 *.swp
 config.passwd
+input
+output
