@@ -19,3 +19,12 @@ var_dump($num);  // string(3) "2.0"
 $num = sprintf('%.1f', $num);  // 返回格式化后的字符串
 var_dump($num);  // string(3) "2.0"
 
+
+# 示例
+$num = 5;
+$location = 'tree';
+$format = 'There are %d monkeys in the %s';
+echo sprintf($format, $num, $location)."\n";  // There are 5 monkeys in the tree
+
+
+
