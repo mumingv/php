@@ -32,5 +32,4 @@ file_put_contents($file, $data);
  */
 $data = "filesystem_file_put_contents append\n";
 file_put_contents($file, $data, FILE_APPEND | LOCK_EX);
-file_put_contents($file, $data, FILE_APPEND | LOCK_EX);
 
