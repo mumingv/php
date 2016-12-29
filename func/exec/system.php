@@ -1,12 +1,12 @@
 <?php
 /***********************************************************
- *     FileName: exec_system.php
+ *     FileName: system.php
  *         Desc: 执行外部程序，并且显示输出
  *       Author: Jie Yin
  *        Email: mumingv@163.com
  *     HomePage: https://github.com/mumingv
  *      Version: 0.0.1
- *   LastChange: 2016-05-13 17:06:56
+ *   LastChange: 2016-12-30 00:07:14
  *      History:
  ***********************************************************/
 
