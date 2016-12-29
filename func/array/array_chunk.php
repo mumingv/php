@@ -1,12 +1,12 @@
 <?php
 /***********************************************************
- *     FileName: array_array_chunk.php
+ *     FileName: array_chunk.php
  *         Desc: 将一个数组分割成多个
  *       Author: Jie Yin
  *        Email: mumingv@163.com
  *     HomePage: https://github.com/mumingv
  *      Version: 0.0.1
- *   LastChange: 2016-04-14 22:41:00
+ *   LastChange: 2016-12-29 22:57:30
  *      History:
  ***********************************************************/
 
