@@ -13,10 +13,24 @@
 # 语法：array array_diff ( array $array1 , array $array2 [, array $... ] )
 # 说明：可以多个数组一起求差集，不仅仅限于两个
 
-# 示例：
-$array1 = array("a" => "green", "red", "blue", "red");
+# 示例：两个数组的差集
+$array1 = array("a" => "green", "red", "blue", "red", "purple");
 $array2 = array("b" => "green", "yellow", "red");
 $result = array_diff($array1, $array2);
+print_r($result);
+/*
+Array
+(
+    [1] => blue
+    [3] => purple
+)
+*/
+
+# 示例：多个数组的差集
+$array1 = array("a" => "green", "red", "blue", "red", "purple");
+$array2 = array("b" => "green", "yellow", "red");
+$array3 = array(0 => "purple");
+$result = array_diff($array1, $array2, $array3);
 print_r($result);
 /*
 Array
