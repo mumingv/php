@@ -1,12 +1,12 @@
 <?php
 /***********************************************************
- *     FileName: array_array_slice.php
+ *     FileName: array_slice.php
  *         Desc: 从数组中取出一段
  *       Author: Jie Yin
  *        Email: mumingv@163.com
  *     HomePage: https://github.com/mumingv
  *      Version: 0.0.1
- *   LastChange: 2016-04-18 13:27:53
+ *   LastChange: 2017-01-05 15:47:58
  *      History:
  ***********************************************************/
 
