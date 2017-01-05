@@ -1,12 +1,12 @@
 <?php
 /***********************************************************
- *     FileName: array_array_shift.php
+ *     FileName: array_shift.php
  *         Desc: 将数组开头的单元移出数组
  *       Author: Jie Yin
  *        Email: mumingv@163.com
  *     HomePage: https://github.com/mumingv
  *      Version: 0.0.1
- *   LastChange: 2016-03-28 11:47:43
+ *   LastChange: 2017-01-05 15:43:55
  *      History:
  ***********************************************************/
 
