@@ -1,12 +1,12 @@
 <?php
 /* =============================================================================
-#     FileName: json_json_last_error_msg.php
+#     FileName: json_last_error_msg.php
 #         Desc: 返回 JSON 编码解码时最后发生的错误信息
 #       Author: Jie Yin
 #        Email: mumingv@163.com
 #     HomePage: https://github.com/mumingv
 #      Version: 0.0.1
-#   LastChange: 2016-03-22 15:10:03
+#   LastChange: 2017-01-05 22:30:49
 #      History:
 ============================================================================= */
 

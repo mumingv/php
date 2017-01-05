@@ -12,15 +12,26 @@
 
 # 语法：string json_encode ( mixed $value [, int $options = 0 [, int $depth = 512 ]] )
 
-/**
- * 示例: 将数组转化成JSON字符串
- */
+# 示例：将数组转换成JSON字符串(无中文字符)
+$arr = array ('a'=>1,'b'=>2,'c'=>3,'d'=>4,'e'=>5);
+echo json_encode($arr);
+/*
+{"a":1,"b":2,"c":3,"d":4,"e":5}
+*/
+
+
+# 示例: 将数组转换成JSON字符串(含中文字符)
 $arr = array(
     "id" => 1173,
     "collegeName" => "北京大学",
     "majorName" => "法学",
 );
-$json_str = json_encode($arr);
+$json_str = json_encode($arr, JSON_UNESCAPED_UNICODE);
 print_r("json_str is: \n");
 print_r($json_str);
+echo "\n";
+/*
+{"id":1173,"collegeName":"北京大学","majorName":"法学"}
+*/
+
 
