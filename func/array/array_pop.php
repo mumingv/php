@@ -17,22 +17,12 @@
 
 # 示例
 $stack = array("orange", "banana", "apple", "raspberry");
-print_r($stack);
-/*
-Array
-(
-    [0] => orange
-    [1] => banana
-    [2] => apple
-    [3] => raspberry
-)
-*/
-
 $fruit = array_pop($stack);
 print_r($fruit);
 echo PHP_EOL;
 print_r($stack);
 /*
+raspberry
 Array
 (
     [0] => orange
