@@ -1,12 +1,12 @@
 <?php
 /***********************************************************
- *     FileName: array_array_keys.php
+ *     FileName: array_keys.php
  *         Desc: 返回数组中部分的或所有的键名
  *       Author: Jie Yin
  *        Email: mumingv@163.com
  *     HomePage: https://github.com/mumingv
  *      Version: 0.0.1
- *   LastChange: 2016-04-14 16:34:24
+ *   LastChange: 2017-01-05 11:14:25
  *      History:
  ***********************************************************/
 
@@ -36,6 +36,7 @@ Array
 
 $array = array("blue", "red", "green", "blue", "blue");
 print_r(array_keys($array, "blue"));
+print_r(array_keys($array, "blue", true));  // 使用严格比较
 /*
 Array
 (
