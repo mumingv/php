@@ -1,12 +1,12 @@
 <?php
 /***********************************************************
- *     FileName: array_array_values.php
+ *     FileName: array_values.php
  *         Desc: 返回数组中所有的值
  *       Author: Jie Yin
  *        Email: mumingv@163.com
  *     HomePage: https://github.com/mumingv
  *      Version: 0.0.1
- *   LastChange: 2016-04-15 14:56:23
+ *   LastChange: 2017-01-06 13:46:20
  *      History:
  ***********************************************************/
 
