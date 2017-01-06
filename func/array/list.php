@@ -1,12 +1,12 @@
 <?php
 /***********************************************************
- *     FileName: array_list.php
+ *     FileName: list.php
  *         Desc: 把数组中的值赋给一些变量
  *       Author: Jie Yin
  *        Email: mumingv@163.com
  *     HomePage: https://github.com/mumingv
  *      Version: 0.0.1
- *   LastChange: 2016-03-25 14:43:00
+ *   LastChange: 2017-01-06 17:28:21
  *      History:
  ***********************************************************/
 

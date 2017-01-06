@@ -1,12 +1,12 @@
 <?php
 /***********************************************************
- *     FileName: array_ksort.php
+ *     FileName: ksort.php
  *         Desc: 对数组按照键名排序
  *       Author: Jie Yin
  *        Email: mumingv@163.com
  *     HomePage: https://github.com/mumingv
  *      Version: 0.0.1
- *   LastChange: 2016-05-04 10:37:32
+ *   LastChange: 2017-01-06 17:24:47
  *      History:
  ***********************************************************/
 
@@ -25,4 +25,5 @@ fruits[b] = banana
 fruits[c] = orange
 fruits[d] = lemon
  */
+
 
