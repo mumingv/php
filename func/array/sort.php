@@ -1,12 +1,12 @@
 <?php
 /***********************************************************
- *     FileName: array_sort.php
+ *     FileName: sort.php
  *         Desc: 对数组排序
  *       Author: Jie Yin
  *        Email: mumingv@163.com
  *     HomePage: https://github.com/mumingv
  *      Version: 0.0.1
- *   LastChange: 2016-04-16 13:22:52
+ *   LastChange: 2017-01-06 21:04:06
  *      History:
  ***********************************************************/
 

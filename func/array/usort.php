@@ -1,12 +1,12 @@
 <?php
 /***********************************************************
- *     FileName: array_usort.php
+ *     FileName: usort.php
  *         Desc: 使用用户自定义的比较函数对数组中的值进行排序 
  *       Author: Jie Yin
  *        Email: mumingv@163.com
  *     HomePage: https://github.com/mumingv
  *      Version: 0.0.1
- *   LastChange: 2016-03-25 15:20:49
+ *   LastChange: 2017-01-06 21:14:49
  *      History:
  ***********************************************************/
 
