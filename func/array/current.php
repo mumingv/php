@@ -1,12 +1,12 @@
 <?php
 /***********************************************************
- *     FileName: array_current.php
+ *     FileName: current.php
  *         Desc: 返回数组中的当前单元
  *       Author: Jie Yin
  *        Email: mumingv@163.com
  *     HomePage: https://github.com/mumingv
  *      Version: 0.0.1
- *   LastChange: 2016-04-18 14:08:33
+ *   LastChange: 2017-01-06 16:24:08
  *      History:
  ***********************************************************/
 
@@ -46,4 +46,5 @@ var_dump(current($arr)); // bool(false)
 
 $arr = array(array());
 var_dump(current($arr)); // array(0) { }
+
 

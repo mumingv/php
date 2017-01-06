@@ -1,12 +1,12 @@
 <?php
 /***********************************************************
- *     FileName: array_each.php
+ *     FileName: each.php
  *         Desc: 返回数组中当前的键／值对并将数组指针向前移动一步
  *       Author: Jie Yin
  *        Email: mumingv@163.com
  *     HomePage: https://github.com/mumingv
  *      Version: 0.0.1
- *   LastChange: 2016-04-18 14:33:20
+ *   LastChange: 2017-01-06 16:36:26
  *      History:
  ***********************************************************/
 
@@ -37,4 +37,21 @@ Array
     [key] => 1
 )
  */
+
+
+# 示例：遍历数组
+$fruit = array('a' => 'apple', 'b' => 'banana', 'c' => 'cranberry');
+reset($fruit);
+while (list($key, $val) = each($fruit)) {
+    echo "$key => $val\n";
+}
+/*
+a => apple
+b => banana
+c => cranberry
+*/
+
+
+
+
 
