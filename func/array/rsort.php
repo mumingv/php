@@ -1,12 +1,12 @@
 <?php
 /***********************************************************
- *     FileName: array_rsort.php
+ *     FileName: rsort.php
  *         Desc: 对数组逆向排序
  *       Author: Jie Yin
  *        Email: mumingv@163.com
  *     HomePage: https://github.com/mumingv
  *      Version: 0.0.1
- *   LastChange: 2016-04-16 13:33:41
+ *   LastChange: 2017-01-06 20:53:32
  *      History:
  ***********************************************************/
 
