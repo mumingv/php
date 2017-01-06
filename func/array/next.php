@@ -12,7 +12,7 @@
 
 # 语法：mixed next ( array &$array )
 
-# 示例：参考 array_current.php
+# 示例：
 $transport = array('foot', 'bike', 'car', 'plane');
 echo current($transport)."\n";  // foot
 echo next($transport)."\n";     // bike
