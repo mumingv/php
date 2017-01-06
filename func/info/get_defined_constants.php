@@ -12,7 +12,7 @@
 
 # 语法：array get_defined_constants ([ bool $categorize = false ] )
 
-# 示例
+# 示例：分类显示
 define("MY_CONSTANT", 1);
 print_r(get_defined_constants(true));
 /*
@@ -30,6 +30,22 @@ Array
         (
             [MY_CONSTANT] => 1
         )
+)
+*/
+
+
+# 示例：不分类显示
+define("MY_CONSTANT2", 1);
+print_r(get_defined_constants());
+/*
+Array
+(
+    [E_ERROR] => 1
+    [E_RECOVERABLE_ERROR] => 4096
+    [E_WARNING] => 2
+    [E_PARSE] => 4
+    ...
+    [MY_CONSTANT2] => 1
 )
 */
 
