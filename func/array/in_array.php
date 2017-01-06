@@ -1,12 +1,12 @@
 <?php
 /***********************************************************
- *     FileName: array_in_array.php
+ *     FileName: in_array.php
  *         Desc: 检查数组中是否存在某个值
  *       Author: Jie Yin
  *        Email: mumingv@163.com
  *     HomePage: https://github.com/mumingv
  *      Version: 0.0.1
- *   LastChange: 2016-04-15 11:35:36
+ *   LastChange: 2017-01-06 16:57:47
  *      History:
  ***********************************************************/
 
