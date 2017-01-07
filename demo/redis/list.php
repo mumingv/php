@@ -25,4 +25,16 @@ $array = $redis->lrange("list", 0 ,5);
 echo "Stored string in redis:\n";
 print_r($array);
 
-
+/*
+Connection to server sucessfully.
+Stored string in redis:
+Array
+(
+    [0] => Mysql
+    [1] => Mongodb
+    [2] => Redis
+    [3] => Mysql
+    [4] => Mongodb
+    [5] => Redis
+)
+*/

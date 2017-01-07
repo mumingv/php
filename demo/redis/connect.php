@@ -19,4 +19,7 @@ echo "Connection to server sucessfully\n";
 $redis->set("name", "Jay");
 echo "Stored string in redis:: ".$redis->get("name")."\n";
 
-
+/*
+Connection to server sucessfully
+Stored string in redis:: Jay
+*/
