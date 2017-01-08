@@ -16,12 +16,12 @@ $redis->connect('127.0.0.1', 6379);
 echo "Connection to server sucessfully.\n";
 
 // 存储数据到列表中
-$redis->lpush("list", "Redis");
-$redis->lpush("list", "Mongodb");
-$redis->lpush("list", "Mysql");
+$redis->lpush("mlist", "Redis");
+$redis->lpush("mlist", "Mongodb");
+$redis->lpush("mlist", "Mysql");
 
 // 获取存储的数据并输出
-$array = $redis->lrange("list", 0 ,5);
+$array = $redis->lrange("mlist", 0 ,5);
 echo "Stored string in redis:\n";
 print_r($array);
 
