@@ -1,21 +1,21 @@
 <?php
 /***********************************************************
- *     FileName: setex.php
- *         Desc: string类型，setex方法
+ *     FileName: setEx.php
+ *         Desc: string类型，setEx方法
  *       Author: Jie Yin
  *        Email: mumingv@163.com
  *     HomePage: https://github.com/mumingv
  *      Version: 0.0.1
- *   LastChange: 2017-01-09 11:31:42
+ *   LastChange: 2017-01-09 11:46:02
  *      History:
  ***********************************************************/
 
-# 语法：bool setex($key, $ttl, $value)
+# 语法：bool setEx(string $key, int $ttl, string $value)
 # 参数：
 # $ttl 超时时间，单位：s，默认值：0(不超时)
 # 返回值：成功true
 
-# 示例：设置key/value，ttl为3秒
+# 示例：设置key/value，ttl为30秒
 $redis = new Redis();
 if (!$redis->connect('127.0.0.1')) {
     echo "connect() return fail.\n";
@@ -23,12 +23,12 @@ if (!$redis->connect('127.0.0.1')) {
 } else {
     echo "connect() return successfully.\n";
 }
-$ret = $redis->setex("foo", 3, "bar");
+$ret = $redis->setEx("foo", 30, "bar");
 if ($ret !== true) {
-    echo "setex() return fail.\n";
+    echo "setEx() return fail.\n";
     exit;
 } else {
-    echo "setex() return successfully.\n";
+    echo "setEx() return successfully.\n";
 }
 
 
