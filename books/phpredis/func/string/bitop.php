@@ -1,7 +1,7 @@
 <?php
 /***********************************************************
  *     FileName: bitop.php
- *         Desc: string类型，位操作，计算value中值为1的bit个数
+ *         Desc: string类型，位操作，两个value进行位运算，将结果存入新的value
  *       Author: Jie Yin
  *        Email: mumingv@163.com
  *     HomePage: https://github.com/mumingv
