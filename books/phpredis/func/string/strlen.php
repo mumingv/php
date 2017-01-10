@@ -1,22 +1,18 @@
 <?php
 /***********************************************************
- *     FileName: set.php
- *         Desc: string类型，设置string
+ *     FileName: strlen.php
+ *         Desc: string类型，获取string的长度
  *       Author: Jie Yin
  *        Email: mumingv@163.com
  *     HomePage: https://github.com/mumingv
  *      Version: 0.0.1
- *   LastChange: 2017-01-09 11:15:35
+ *   LastChange: 2017-01-10 15:58:49
  *      History:
  ***********************************************************/
 
-# 语法：bool set($key, $value, [$timeout | array $options])
-# 参数：
-# $timeout 超时时间，单位：s，默认值：0
-# $options 
-# 返回值：成功true
+# 语法：int strlen(string $key)
 
-# 示例：设置key/value
+# 示例：
 // 连接
 $redis = new Redis();
 if (!$redis->connect('127.0.0.1')) {
@@ -25,11 +21,14 @@ if (!$redis->connect('127.0.0.1')) {
 } else {
     echo "connect() return successfully.\n";
 }
-// 设置
-$ret = $redis->set("foo", "bar");
+// 设置: "Hello world!"
+$ret = $redis->set("foo", "Hello world!");
 if ($ret !== true) {
     echo "set() return fail.\n";
     exit;
 } else {
     echo "set() return successfully.\n";
 }
+// setRange: "Hello redis!"
+$length = $redis->strlen("foo");
+var_dump($length);  // 12
