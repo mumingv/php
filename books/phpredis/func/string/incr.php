@@ -1,7 +1,7 @@
 <?php
 /***********************************************************
  *     FileName: incr.php
- *         Desc: string类型，位操作，将value的值增加1
+ *         Desc: string类型，将value的值增加1
  *       Author: Jie Yin
  *        Email: mumingv@163.com
  *     HomePage: https://github.com/mumingv

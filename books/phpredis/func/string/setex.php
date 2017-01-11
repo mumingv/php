@@ -1,7 +1,7 @@
 <?php
 /***********************************************************
  *     FileName: setEx.php
- *         Desc: string类型，setEx方法
+ *         Desc: string类型，设置string，超时后自动删除
  *       Author: Jie Yin
  *        Email: mumingv@163.com
  *     HomePage: https://github.com/mumingv

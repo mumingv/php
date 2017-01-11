@@ -1,7 +1,7 @@
 <?php
 /***********************************************************
  *     FileName: msetnx.php
- *         Desc: string类型，设置多个key/value，key不存在则设置，key存在则不设置
+ *         Desc: string类型，设置多个key/value，所有key不存在则设置，有key存在则不设置
  *       Author: Jie Yin
  *        Email: mumingv@163.com
  *     HomePage: https://github.com/mumingv

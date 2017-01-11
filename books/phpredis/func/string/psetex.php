@@ -14,7 +14,7 @@
 
 # 语法：bool pSetEx(string $key, int $ttl, string $value)
 # 参数：
-# $ttl 超时时间，单位：s，默认值：0(不超时)
+# $ttl 超时时间，单位：ms，默认值：0(不超时)
 # 返回值：成功true
 
 # 示例：设置key/value，ttl为30秒
