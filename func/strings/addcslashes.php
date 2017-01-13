@@ -13,11 +13,12 @@
 # 语法：string addcslashes ( string $str , string $charlist )
 # 说明：$charlist可以使用表示范围的字符列表，如：'a..z'。
 
-# 示例：转义A到z之间所有的字符
+# 示例：转义a到z之间所有的字符
 echo addcslashes('foo[ ]', 'a..z')."\n";
 /*
 \f\o\o[ ]
 */
+# 示例：转义A到z之间所有的字符
 echo addcslashes('foo[ ]', 'A..z')."\n";
 /*
 \f\o\o\[ \]
