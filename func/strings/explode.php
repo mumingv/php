@@ -34,7 +34,24 @@ echo $shell . PHP_EOL; ///bin/sh
  */
 $str = "我爱北京天安门，哈哈。你好啊！";  
 print_r (explode("。",$str));  
+/*
+Array
+(
+    [0] => 我爱北京天安门，哈哈
+    [1] => 你好啊！
+)
+*/
 
 $str = "I am a stutdent. Right?";
 print_r (explode(" ",$str));  
+/*
+Array
+(
+    [0] => I
+    [1] => am
+    [2] => a
+    [3] => stutdent.
+    [4] => Right?
+)
+*/
 
