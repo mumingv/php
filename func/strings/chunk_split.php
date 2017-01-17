@@ -10,8 +10,6 @@
 #      History:
 ============================================================================= */
 
-# 说明：将整数ascii码转换成对应的字符。
-
 # 语法：string chunk_split ( string $body [, int $chunklen = 76 [, string $end = "\r\n" ]] )
 
 # 示例：将一个字符串拆分成多行
@@ -22,7 +20,7 @@ echo chunk_split($string, 2);
 34
  */
 
-# 示例：将一个字符串拆分成多行
+# 示例：将一个字符串使用冒号分隔
 $string = '1234'; 
 echo chunk_split($string, 2, ':');
 /*
