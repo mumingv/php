@@ -1,7 +1,7 @@
 <?php
 /* =============================================================================
 #     FileName: join.php
-#         Desc: 将一个一维数组的值转化为字符串
+#         Desc: 将一个一维数组的值转化为字符串 (implode的别名)
 #       Author: Jie Yin
 #        Email: mumingv@163.com
 #     HomePage: https://github.com/mumingv
