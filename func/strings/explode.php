@@ -1,12 +1,12 @@
 <?php
 /* =============================================================================
-#     FileName: string_explode.php
+#     FileName: explode.php
 #         Desc: 使用一个字符串分割另一个字符串
 #       Author: Jie Yin
 #        Email: mumingv@163.com
 #     HomePage: https://github.com/mumingv
 #      Version: 0.0.1
-#   LastChange: 2016-03-25 14:36:52
+#   LastChange: 2017-01-17 13:50:19
 #      History:
 ============================================================================= */
 
