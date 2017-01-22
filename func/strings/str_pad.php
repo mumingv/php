@@ -1,12 +1,12 @@
 <?php
 /* =============================================================================
-#     FileName: string_str_pad.php
+#     FileName: str_pad.php
 #         Desc: 使用另一个字符串填充字符串为指定长度
 #       Author: Jie Yin
 #        Email: mumingv@163.com
 #     HomePage: https://github.com/mumingv
 #      Version: 0.0.1
-#   LastChange: 2016-05-12 14:07:38
+#   LastChange: 2017-01-22 10:34:06
 #      History:
 ============================================================================= */
 

@@ -1,12 +1,12 @@
 <?php
 /***********************************************************
- *     FileName: string_str_getcsv.php
+ *     FileName: str_getcsv.php
  *         Desc: 解析 CSV 字符串为一个数组
  *       Author: Jie Yin
  *        Email: mumingv@163.com
  *     HomePage: https://github.com/mumingv
  *      Version: 0.0.1
- *   LastChange: 2016-03-25 23:30:57
+ *   LastChange: 2017-01-22 10:28:42
  *      History:
  ***********************************************************/
 

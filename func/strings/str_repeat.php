@@ -1,12 +1,12 @@
 <?php
 /* =============================================================================
-#     FileName: string_str_repeat.php
+#     FileName: str_repeat.php
 #         Desc: 重复一个字符串
 #       Author: Jie Yin
 #        Email: mumingv@163.com
 #     HomePage: https://github.com/mumingv
 #      Version: 0.0.1
-#   LastChange: 2016-05-12 14:16:35
+#   LastChange: 2017-01-22 10:35:42
 #      History:
 ============================================================================= */
 

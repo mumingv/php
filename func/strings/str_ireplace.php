@@ -1,12 +1,12 @@
 <?php
 /***********************************************************
- *     FileName: string_str_ireplace.php
+ *     FileName: str_ireplace.php
  *         Desc: 子字符串替换(忽略大小写)
  *       Author: Jie Yin
  *        Email: mumingv@163.com
  *     HomePage: https://github.com/mumingv
  *      Version: 0.0.1
- *   LastChange: 2016-03-26 00:05:02
+ *   LastChange: 2017-01-22 10:31:44
  *      History:
  ***********************************************************/
 
