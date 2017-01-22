@@ -13,20 +13,30 @@
 # 语法：array str_getcsv ( string $input [, string $delimiter = "," [, string $enclosure = '"' [, string $escape = "\\" ]]] )
 
 # 示例
-$csv = array_map('str_getcsv', file('../../data/data.csv'));
-var_export($csv);
+print_r(str_getcsv("1,mumingv\n2,henry", "\n"));
 /*
- * array (
- *   0 => 
- *   array (
- *     0 => '1',
- *     1 => 'mumingv',
- *     ),
- *   1 => 
- *   array (
- *     0 => '2',
- *     1 => 'henry',
- *   ),
- * )
- */
+Array
+(
+    [0] => 1,mumingv
+    [1] => 2,henry
+)
+*/
+
+# 示例
+$csv = array_map('str_getcsv', file('../../data/data.csv'));
+print_r($csv);
+/*
+array (
+  0 => 
+  array (
+    0 => '1',
+    1 => 'mumingv',
+  ),
+  1 => 
+  array (
+    0 => '2',
+    1 => 'henry',
+  ),
+)
+*/
 
