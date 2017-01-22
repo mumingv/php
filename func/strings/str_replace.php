@@ -13,7 +13,6 @@
 # 语法：mixed str_replace ( mixed $search , mixed $replace , mixed $subject [, int &$count ] )
 # 返回值：替换后的字符串或者数组
 
-
 # 示例
 
 // 赋值: <body text='black'>
