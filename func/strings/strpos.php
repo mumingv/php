@@ -1,12 +1,12 @@
 <?php
 /***********************************************************
- *     FileName: string_strpos.php
+ *     FileName: strpos.php
  *         Desc: 查找字符串首次出现的位置
  *       Author: Jie Yin
  *        Email: mumingv@163.com
  *     HomePage: https://github.com/mumingv
  *      Version: 0.0.1
- *   LastChange: 2016-03-25 11:13:39
+ *   LastChange: 2017-02-08 03:19:43
  *      History:
  ***********************************************************/
 
@@ -27,7 +27,7 @@ if ($pos == false) { //两个等号，只会判断值是否相等, 不会判断�
     echo "The string '$findme' was found in the string '$mystring'";
     echo " and exists at position $pos";
 }
-if ($pos === false) { //两个等号，不仅会判断值是否相等, 也会判断类型是否相同
+if ($pos === false) { //三个等号，不仅会判断值是否相等, 也会判断类型是否相同
     echo "The string '$findme' was not found in the string '$mystring'";
 } else {
     echo "The string '$findme' was found in the string '$mystring'"; // 单引号中的变量也会被扩展变量值
