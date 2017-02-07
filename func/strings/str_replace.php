@@ -1,37 +1,51 @@
 <?php
-/***********************************************************
- *     FileName: string_str_replace.php
- *         Desc: 子字符串替换
- *       Author: Jie Yin
- *        Email: mumingv@163.com
- *     HomePage: https://github.com/mumingv
- *      Version: 0.0.1
- *   LastChange: 2016-03-24 21:59:41
- *      History:
- ***********************************************************/
+/* =============================================================================
+#     FileName: str_replace.php
+#         Desc: 子字符串替换
+#       Author: Jie Yin
+#        Email: mumingv@163.com
+#     HomePage: https://github.com/mumingv
+#      Version: 0.0.1
+#   LastChange: 2017-02-07 15:09:13
+#      History:
+============================================================================= */
 
 # 语法：mixed str_replace ( mixed $search , mixed $replace , mixed $subject [, int &$count ] )
-# 返回值：替换后的字符串或者数组
 
-# 示例
-
-// 赋值: <body text='black'>
+# 示例: 所有参数均为字符串，不是数组
 $bodytag = str_replace("%body%", "black", "<body text='%body%'>");
-echo $bodytag . PHP_EOL; //<body text='black'>
+var_dump($bodytag);
+/*
+string(19) "<body text='black'>"
+*/
 
-// 赋值: Hll Wrld f PHP
+# 示例：去除字符串中的元音字母，第一个参数是数组，其他参数为字符串
 $vowels = array("a", "e", "i", "o", "u", "A", "E", "I", "O", "U");
 $onlyconsonants = str_replace($vowels, "", "Hello World of PHP");
-echo $onlyconsonants . PHP_EOL; //Hll Wrld f PHP
+var_dump($vowels);
+/*
+array(10) {
+  [0]=>
+  string(1) "a"
+  [1]=>
+  string(1) "e"
+  [2]=>
+  string(1) "i"
+  [3]=>
+  string(1) "o"
+  [4]=>
+  string(1) "u"
+  [5]=>
+  string(1) "A"
+  [6]=>
+  string(1) "E"
+  [7]=>
+  string(1) "I"
+  [8]=>
+  string(1) "O"
+  [9]=>
+  string(1) "U"
+}
+*/
 
-// 赋值: You should eat pizza, beer, and ice cream every day
-$phrase  = "You should eat fruits, vegetables, and fiber every day.";
-$healthy = array("fruits", "vegetables", "fiber");
-$yummy   = array("pizza", "beer", "ice cream");
-$newphrase = str_replace($healthy, $yummy, $phrase);
-echo $newphrase . PHP_EOL; //You should eat pizza, beer, and ice cream every day.
-
-// 赋值: 2
-$str = str_replace("ll", "", "good golly miss molly!", $count);
-echo $count . PHP_EOL; //2
 
