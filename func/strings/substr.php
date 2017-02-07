@@ -1,12 +1,12 @@
 <?php
 /***********************************************************
- *     FileName: string_substr.php
+ *     FileName: substr.php
  *         Desc: 返回字符串的子串
  *       Author: Jie Yin
  *        Email: mumingv@163.com
  *     HomePage: https://github.com/mumingv
  *      Version: 0.0.1
- *   LastChange: 2016-03-25 10:12:17
+ *   LastChange: 2017-02-08 04:24:30
  *      History:
  ***********************************************************/
 

@@ -1,12 +1,12 @@
 <?php
 /* =============================================================================
-#     FileName: string_trim.php
+#     FileName: trim.php
 #         Desc: 去除字符串首尾的空白字符（或者其他字符）
 #       Author: Jie Yin
 #        Email: mumingv@163.com
 #     HomePage: https://github.com/mumingv
 #      Version: 0.0.1
-#   LastChange: 2016-03-22 09:58:51
+#   LastChange: 2017-02-08 04:26:44
 #      History:
 ============================================================================= */
 

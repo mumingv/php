@@ -1,12 +1,12 @@
 <?php
 /***********************************************************
- *     FileName: string_ucfirst.php
+ *     FileName: ucfirst.php
  *         Desc: 将字符串的首字母转换为大写
  *       Author: Jie Yin
  *        Email: mumingv@163.com
  *     HomePage: https://github.com/mumingv
  *      Version: 0.0.1
- *   LastChange: 2016-03-24 22:30:16
+ *   LastChange: 2017-02-08 04:27:04
  *      History:
  ***********************************************************/
 
