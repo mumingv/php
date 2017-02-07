@@ -1,12 +1,12 @@
 <?php
 /***********************************************************
- *     FileName: string_strspn.php
+ *     FileName: strspn.php
  *         Desc: 计算字符串中全部字符都存在于指定字符集合中的第一段子串的长度
  *       Author: Jie Yin
  *        Email: mumingv@163.com
  *     HomePage: https://github.com/mumingv
  *      Version: 0.0.1
- *   LastChange: 2016-05-12 11:57:39
+ *   LastChange: 2017-02-08 03:42:39
  *      History:
  ***********************************************************/
 
