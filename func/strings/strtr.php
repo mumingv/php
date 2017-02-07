@@ -10,9 +10,9 @@
  *      History:
  ***********************************************************/
 
-# 语法：tring strtr ( string $str , string $from , string $to )
+# 语法：string strtr ( string $str , string $from , string $to )
 # 说明：该函数是字符替换，不是字符串替换; 
-# 语法：tring strtr ( string $str , array $replace_pairs )
+# 语法：string strtr ( string $str , array $replace_pairs )
 # 说明：该函数是字符串替换，不是字符替换; 
 
 # 示例: 字符替换
