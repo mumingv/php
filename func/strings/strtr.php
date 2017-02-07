@@ -1,12 +1,12 @@
 <?php
 /***********************************************************
- *     FileName: string_strtr.php
+ *     FileName: strtr.php
  *         Desc: 转换指定字符
  *       Author: Jie Yin
  *        Email: mumingv@163.com
  *     HomePage: https://github.com/mumingv
  *      Version: 0.0.1
- *   LastChange: 2016-05-12 11:44:53
+ *   LastChange: 2017-02-08 03:56:53
  *      History:
  ***********************************************************/
 

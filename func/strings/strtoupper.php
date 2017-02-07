@@ -1,12 +1,12 @@
 <?php
 /***********************************************************
- *     FileName: string_strtoupper.php
+ *     FileName: strtoupper.php
  *         Desc: 将字符串转化为大写
  *       Author: Jie Yin
  *        Email: mumingv@163.com
  *     HomePage: https://github.com/mumingv
  *      Version: 0.0.1
- *   LastChange: 2016-05-05 15:24:52
+ *   LastChange: 2017-02-08 03:56:36
  *      History:
  ***********************************************************/
 
