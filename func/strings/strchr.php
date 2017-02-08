@@ -15,8 +15,14 @@
 # 示例：
 $email  = 'name@example.com';
 $domain = strchr($email, '@');
-echo $domain;
+echo $domain."\n";
 /*
 @example.com
+*/
+
+$domain = strchr($email, 'ex');
+echo $domain."\n";
+/*
+example.com
 */
 
