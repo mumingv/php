@@ -11,7 +11,7 @@
  ***********************************************************/
 
 # 语法：bool zadd(string $key, double $score, string $value)
-# 返回值：成功返回value，($score, $value)配对已经存在返回false，失败返回false
+# 返回值：成功返回value，失败返回false(两个数据的$score可以相同，$value不能相同)
 
 # 示例：根据key获取value
 // 连接
@@ -29,7 +29,7 @@ if ($redis->exists("foo")) {
 }
 
 // 设置
-/*
+
 $ret = $redis->zadd("foo", 1, "bar1");
 if ($ret == false) {
     echo "zadd return fail 1.\n";
@@ -45,7 +45,13 @@ if ($ret == false) {
     echo "zadd return fail 5.\n";
     exit;
 }
-*/
+$ret = $redis->zadd("foo", 0, "bar3");
+if ($ret == false) {
+    echo "zadd return fail 3.\n";
+    exit;
+}
+
+/*
 foreach (range(20, 10) as $value) {
     $ret = $redis->zadd("foo", $value, "bar".$value);
     if ($ret == false) {
@@ -53,9 +59,11 @@ foreach (range(20, 10) as $value) {
         exit;
     }
 }
+*/
 
 // 获取所有value 
-$ret = $redis->zrange("foo", 0, -1, true);
+$ret = $redis->zrange("foo", 0, -1);
+//$ret = $redis->zrange("foo", 0, -1, true);  // 第4个参数控制是否显示score
 if ($ret !== false) {
     echo "get() return successfully. value: \n";
     print_r($ret);
