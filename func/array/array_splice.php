@@ -13,6 +13,19 @@
 # 语法：array array_splice ( array &$input , int $offset [, int $length = 0 [, mixed $replacement ]] )
 
 # 示例：
+
+// 删除一个元素
+$input = array("red", "green", "blue", "yellow");
+array_splice($input, 2, 1);
+var_export($input);
+/*
+array (
+  0 => 'red',
+  1 => 'green',
+  2 => 'yellow',
+)
+*/
+
 // 删除元素
 $input = array("red", "green", "blue", "yellow");
 array_splice($input, 2);
