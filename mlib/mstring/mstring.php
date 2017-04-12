@@ -72,7 +72,7 @@ class MString {
             if (mb_strlen($subStr) < $len) {
                 $result[] = $subStr;
             } else {
-                $strlen = mb_strlen($string);
+                $strlen = mb_strlen($subStr);
                 $adjustLen = ceil($strlen / ceil($strlen / $len));
                 while ($strlen) {
                     $result[] = mb_substr($subStr, 0, $adjustLen, "utf8");
