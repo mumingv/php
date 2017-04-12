@@ -52,5 +52,35 @@ class MString {
         preg_match_all('/[\x{4e00}-\x{9fff}，。！：；“”a-zA-Z0-9]/u' , $str, $result);
         return implode('', $result[0]);
     }
-}
 
+    /**
+     * 使用标点符号分割文本，返回分割后的字符串数组
+     * @param string
+     * @param len 每个子句的最大长度
+     * @return array
+     */
+    public static function mbStringSplit($string, $len = 50) {
+        mb_regex_encoding('UTF-8');     
+        mb_internal_encoding("UTF-8");  
+        $subStrArr = mb_split('。|！|？', $string);  
+        if ((count($subStrArr) > 0) && (strlen(end($subStrArr)) == 0)) {
+            array_pop($subStrArr);
+        }
+
+        $result = [];
+        foreach ($subStrArr as $subStr) {
+            if (mb_strlen($subStr) < $len) {
+                $result[] = $subStr;
+            } else {
+                $strlen = mb_strlen($string);
+                $adjustLen = ceil($strlen / ceil($strlen / $len));
+                while ($strlen) {
+                    $result[] = mb_substr($subStr, 0, $adjustLen, "utf8");
+                    $subStr = mb_substr($subStr, $adjustLen, $strlen,"utf8");
+                    $strlen = mb_strlen($subStr);
+                }
+            }
+        }
+        return $result;        
+    } 
+}
