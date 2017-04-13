@@ -25,5 +25,9 @@ echo '<a href="mycgi?foo=', urlencode($userinput), '">', "\n";  // <a href="mycg
 # 示例：中文字符编码
 $userinput = '大王派我来巡山！';
 echo '<a href="mycgi?foo=', urlencode($userinput), '">', "\n";
-echo '<a href="mycgi?foo=', urlencode(urlencode($userinput)), '">';
+echo '<a href="mycgi?foo=', urlencode(urlencode($userinput)), '">', "\n";
+
+# 示例：带空格的query
+$userinput = 'iphone7 plus发布新闻';
+echo urlencode($userinput), "\n";
 
