@@ -14,5 +14,10 @@ $data = array(
     'content' => $content,
 );
 
-sleep(1);
+$seconds = array(1, 1, 1);
+shuffle($seconds);
+sleep($seconds[0]);
+
+$data['second'] = $seconds[0];
+$data['microtime'] = microtime();
 echo json_encode($data);
