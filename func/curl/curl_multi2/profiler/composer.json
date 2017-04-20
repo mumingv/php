@@ -1,0 +1,12 @@
+{
+    "name": "vega/profiler",                             
+    "type": "library" ,
+    "description": "统计程序耗时和内存使用",
+    "keywords": ["profiler","benchmark","time","memory"],
+    "authors": [
+        {"name": "zhaoxianghua", "email": "zhaoxianghua@baidu.com"}
+    ],
+    "autoload": {
+        "psr-4": { "Vega\\Profiler\\": "src/" }   
+    }
+}

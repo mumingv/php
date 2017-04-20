@@ -14,4 +14,5 @@ $data = array(
     'content' => $content,
 );
 
+sleep(1);
 echo json_encode($data);
