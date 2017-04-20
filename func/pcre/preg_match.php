@@ -38,18 +38,49 @@ if (preg_match("/\bweb\b/i", "PHP is the website scripting language of choice.")
 // A match was not found.
 
 
+# PCRE子组(子模式)
+preg_match("/((red|white) (king|queen))/", "the red king", $matches);
+var_dump($matches);
+/*
+array(4) {
+  [0]=>
+  string(8) "red king"  // 整个模式匹配的结果
+  [1]=>
+  string(8) "red king"  // 第1个子组匹配的结果 ((red|white) (king|queen))
+  [2]=>
+  string(3) "red"  // 第2个子组匹配的结果 (red|white)
+  [3]=>
+  string(4) "king"  // 第3个子组匹配的结果 (king|queen)
+}
+*/
+
+
+// 分组开头的 ?: 表示不捕获该分组
+preg_match("/((?:red|white) (king|queen))/", "the red king", $matches);
+var_dump($matches);
+/*
+array(3) {
+  [0]=>
+  string(8) "red king"
+  [1]=>
+  string(8) "red king"
+  [2]=>
+  string(4) "king"
+}
+*/
+
+
 # 获取URL中的域名
 // 从URL中获取主机名称
+// 说明：这里的 @ 表示模式字符串的起止字符；[^/]+ 表示接下来的字符串一直到'/'截止。
 preg_match('@^(?:http://)?([^/]+)@i',
     "http://www.php.net/index.html", $matches);
-var_dump($matches);exit;
-$host = $matches[1];
+var_dump($matches);
 
 // 获取主机名称的后面两部分
+// 说明：[^.]+ 示接下来的字符串一直到'.'截止，'.'在方括号中表示字面意义；
+$host = $matches[1];
 preg_match('/[^.]+\.[^.]+$/', $host, $matches);
-echo "domain name is: {$matches[0]}\n";
-
-
-
+var_dump($matches);
 
 
