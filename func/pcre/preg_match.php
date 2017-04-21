@@ -11,7 +11,7 @@
  ***********************************************************/
 
 # int preg_match ( string $pattern , string $subject [, array &$matches [, int $flags = 0 [, int $offset = 0 ]]] )
-# 返回值：0-不匹配；1-匹配
+# 返回值：正常返回匹配次数(0或1)；异常返回false。
 
 # 示例: 查找文本字符串
 if (preg_match("/php/i", "PHP is the web scripting language of choice.")) {
