@@ -1,7 +1,7 @@
 <?php
 /***********************************************************
  *     FileName: preg_match.php
- *         Desc: 执行匹配正则表达式
+ *         Desc: 正则表达式匹配
  *       Author: Jie Yin
  *        Email: mumingv@163.com
  *     HomePage: https://github.com/mumingv
