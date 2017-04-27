@@ -46,4 +46,15 @@ class MArray {
         }
         return $data;
     }
+
+    /**
+     * 合并数组(key当作字符串处理，相同key值的数据后面的不会覆盖前面的)
+     * @param mixed $arr1 
+     * @param mixed $arr2 
+     * @return void
+     */
+    public static function arrayMerge($arr1, $arr2) {
+        $data = $arr1 + $arr2;    
+        return $data;
+    }
 }
