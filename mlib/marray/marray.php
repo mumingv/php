@@ -10,6 +10,33 @@
  *      History:
  ***********************************************************/
 
+class MArray {
+
+    /**
+     * 二维数组根据某个字段去重
+     * @param mixed $arr 
+     * @param mixed $key 
+     * @param bool $flag true表示保留首次出现的数据(不覆盖)，false表示保留最后出现的数据(覆盖)
+     * @return array
+     */
+    public static function arrayUniqueWithField($arr, $fieldName, $flag = false) {
+        $data = array();
+        foreach ($arr as $row) {
+            if (isset($row[$fieldName])) {
+                echo $row[$fieldName];
+                var_dump(array_key_exists($row[$fieldName], $data));
+                if (!array_key_exists($row[$fieldName], $data)) {
+                    $data[$row[$fieldName]] = $row;
+                } else {
+                    // 存在同key的数据，根据flag决定是否需要覆盖
+                    if ($flag === false) {
+                        $data[$row[$fieldName]] = $row;
+                    }
+                }
+            }   
+        }
+        return $data;
+    }
 
     public static function changeAssoc($arr, $key) {
         $data = array();
@@ -20,3 +47,4 @@
         }
         return $data;
     }
+}
