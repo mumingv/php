@@ -17,14 +17,12 @@ class MArray {
      * @param mixed $arr 
      * @param mixed $key 
      * @param bool $flag true表示保留首次出现的数据(不覆盖)，false表示保留最后出现的数据(覆盖)
-     * @return array
+     * @return array 返回一个自然排序的数组
      */
     public static function arrayUniqueWithField($arr, $fieldName, $flag = false) {
         $data = array();
         foreach ($arr as $row) {
             if (isset($row[$fieldName])) {
-                echo $row[$fieldName];
-                var_dump(array_key_exists($row[$fieldName], $data));
                 if (!array_key_exists($row[$fieldName], $data)) {
                     $data[$row[$fieldName]] = $row;
                 } else {
@@ -35,6 +33,7 @@ class MArray {
                 }
             }   
         }
+        $data = array_values($data);
         return $data;
     }
 
