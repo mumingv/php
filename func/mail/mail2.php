@@ -13,10 +13,10 @@
 # 语法：bool mail ( string $to , string $subject , string $message [, string $additional_headers [, string $additional_parameters ]] )
 
 # 示例：发送邮件
-$mail_to = "yinjie05@baidu.com";
-$mail_cc = "yinjie05@baidu.com"; //收件人
+$mail_to = "mumingv@163.com";
+$mail_cc = "mumingv@163.com"; //收件人
 $mail_title = "=?UTF-8?B?".base64_encode('【测试】请尽快处理！')."?=".'----'.date('Y-m-d',time()); //主题
-$mail_headers = "From:yinjie05@baidu.com\r\n";
+$mail_headers = "From:mumingv@163.com\r\n";
 $mail_headers .= "Cc:" . $mail_cc . "\r\n";
 $mail_headers .= "Content-type: text/html; charset=utf-8\r\n";
 $mail_content = "测试邮件，请点击下面的链接查看！\r\n";
