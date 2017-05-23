@@ -14,10 +14,10 @@ $data = array(
     'content' => $content,
 );
 
-$seconds = array(1, 1, 1);
+$seconds = array(1, 2, 3);
 shuffle($seconds);
 sleep($seconds[0]);
 
 $data['second'] = $seconds[0];
 $data['microtime'] = microtime();
-echo json_encode($data);
+echo json_encode($data, JSON_UNESCAPED_UNICODE);
