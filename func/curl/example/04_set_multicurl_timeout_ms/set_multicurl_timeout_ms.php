@@ -11,7 +11,6 @@
  ***********************************************************/
 
 ini_set("display_errors", "on");
-$ch = curl_init('http://123.56.21.232:8254/myprojects/demo/get_json_data.php');
 
 function curlMultiRequest($urls, $options = array()) {  
     $ch= array();  
