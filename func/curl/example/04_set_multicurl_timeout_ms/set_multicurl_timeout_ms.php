@@ -44,6 +44,7 @@ function curlMultiRequest($urls, $options = array()) {
     
     return $results;  
 }
+
 $urls = [  
      'http://123.56.21.232:8254/myprojects/demo/get_json_data.php',  
      'http://123.56.21.232:8254/myprojects/demo/get_json_data2.php',  
