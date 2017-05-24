@@ -1,7 +1,7 @@
 <?php
 /***********************************************************
  *     FileName: set_multicurl_timeout_ms.php
- *         Desc: 设置毫秒级别超时
+ *         Desc: multicurl设置毫秒级别超时
  *       Author: Jie Yin
  *        Email: mumingv@163.com
  *     HomePage: https://github.com/mumingv
@@ -35,6 +35,9 @@ function curlMultiRequest($urls, $options = array()) {
     // Get content and remove handles.  
     foreach ($ch as $key => $val) {  
         $results[$key] = curl_multi_getcontent($val);  
+        if ($results[$key] == '') {
+            $results[$key] = curl_error($val);
+        }
         curl_multi_remove_handle($mh, $val);  
     }  
     curl_multi_close($mh);  
@@ -44,7 +47,7 @@ function curlMultiRequest($urls, $options = array()) {
 $urls = [  
      'http://123.56.21.232:8254/myprojects/demo/get_json_data.php',  
      'http://123.56.21.232:8254/myprojects/demo/get_json_data2.php',  
-];  
+];
   
 $opts = [  
     CURLOPT_HEADER => false,  
