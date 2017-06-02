@@ -14,15 +14,15 @@ ini_set("display_errors", "on");
 require_once('CurlMulti.php');
 
 $urls = [  
-     'http://123.56.21.232:8254/myprojects/demo/get_json_data.php',  
-     'http://123.56.21.232:8254/myprojects/demo/get_json_data2.php',  
+     'urla' => 'http://123.56.21.232:8254/myprojects/demo/get_json_data.php',  
+     'urlb' => 'http://123.56.21.232:8254/myprojects/demo/get_json_data2.php',  
 ];
   
 $opts = [  
     CURLOPT_HEADER => false,  
     CURLOPT_RETURNTRANSFER => true,  
-    CURLOPT_TIMEOUT_MS => 1500,//执行脚本超时  
-    CURLOPT_NOSIGNAL => true, //这个是设定毫秒必须设定  
+    CURLOPT_TIMEOUT_MS => 1500,  // 执行脚本超时  
+    CURLOPT_NOSIGNAL => true,   // 使用毫秒超时必须设置
 ];
   
 $obj = new CurlMulti();
