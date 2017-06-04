@@ -13,7 +13,6 @@
 ini_set("display_errors", "on");
 require_once('CurlMulti.php');
 
-/*
 $urls = [  
     'urla' => array(
         'http://123.56.21.232:8254/myprojects/demo/get_json_data.php?a=1',  
@@ -26,9 +25,9 @@ $urls = [
         'http://123.56.21.232:8254/myprojects/demo/get_json_data2.php?a=6',  
     ),
 ];
-*/
 
 // url支持字符串和数据混用的形式
+/*
 $urls = [  
     'urla' => 'http://123.56.21.232:8254/myprojects/demo/get_json_data.php',
     'urlb' => array(
@@ -37,11 +36,12 @@ $urls = [
         'http://123.56.21.232:8254/myprojects/demo/get_json_data2.php',  
     ),
 ];
+*/
   
 $opts = [  
     CURLOPT_HEADER => false,  
     CURLOPT_RETURNTRANSFER => true,  
-    CURLOPT_TIMEOUT_MS => 4000,  // 执行脚本超时  
+    CURLOPT_TIMEOUT_MS => 1500,  // 执行脚本超时  
     CURLOPT_NOSIGNAL => true,   // 使用毫秒超时必须设置
 ];
   
