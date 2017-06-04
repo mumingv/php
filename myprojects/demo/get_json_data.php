@@ -19,6 +19,6 @@ shuffle($seconds);
 sleep($seconds[0]);
 
 $data['second'] = $seconds[0];
-$data['microtime'] = microtime();
+$data['microtime'] = microtime(true);
 header('Content-Type: application/json; charset=utf-8');
 echo json_encode($data, JSON_UNESCAPED_UNICODE);

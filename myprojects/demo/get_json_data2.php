@@ -14,5 +14,8 @@ $data = array(
     'content' => $content,
 );
 
-sleep(1);
-echo json_encode($data);
+//sleep(1);
+$data['second'] = $seconds[0];
+$data['microtime'] = microtime(true);
+header('Content-Type: application/json; charset=utf-8');
+echo json_encode($data, JSON_UNESCAPED_UNICODE);
