@@ -25,7 +25,6 @@ class CurlMulti {
                 $urls[$key] = array($value);    
             }
         }
-        //print_r($urls);
         
         foreach ($urls as $key => $urlArr) {  
             foreach ($urlArr as $inkey => $url) {
@@ -35,33 +34,39 @@ class CurlMulti {
                 }  
                 curl_setopt($chArr[$key][$inkey], CURLOPT_URL, $url);  
                 curl_multi_add_handle($mh, $chArr[$key][$inkey]);
-                $results[$key][$inkey] = array(
-                    'url' => $url,
-                    'errmsg' => '',
-                    'content' => '',
-                );
             }
+            $results[$key] = array(
+                'url' => '',
+                'errmsg' => '',
+                'content' => '',
+            );
         }
-        //print_r($chArr);print_r($results);print_r($mh);exit;
         
-        $running = null;  
-        do {  
-            curl_multi_exec($mh, $running);  
-        } while ($running > 0);  
-        
-        // 获取内容并移除句柄
-        foreach ($chArr as $key => $handleArr) {  
-            foreach ($handleArr as $inkey => $handle)
-            {
-                $content = curl_multi_getcontent($handle);  
-                if ($content == '') {
-                    $results[$key][$inkey]['errmsg'] = curl_error($handle);
-                } else {
-                    $results[$key][$inkey]['content'] = $content;
+        do {
+            // 循环一直等到有url返回数据
+            while (($mrc = curl_multi_exec($mh, $active)) == CURLM_CALL_MULTI_PERFORM);
+            if ($mrc != CURLM_OK) {
+                echo "curl_multi_exec() renurn error!";    
+                break;
+            }
+
+            // 读取数据并删除该url对应的多个句柄
+            while ($info = curl_multi_info_read($mh, $msgNum)) {
+                $detailInfo = curl_getinfo($info['handle']);
+                foreach ($urls as $key => $urlArr) {
+                    if (in_array($detailInfo['url'], $urlArr)) {
+                        $results[$key]['url'] = $detailInfo['url'];
+                        $results[$key]['content'] = curl_multi_getcontent($info['handle']);  
+                        $results[$key]['errmsg'] = curl_error($info['handle']);  
+                        foreach ($chArr[$key] as $handle) {
+                            curl_multi_remove_handle($mh, $handle);
+                            curl_close($handle); 
+                        }
+                    }
                 }
-                curl_multi_remove_handle($mh, $handle);
             }
-        }
+        } while ($active);
+
         curl_multi_close($mh);  
         return $results;
     }
