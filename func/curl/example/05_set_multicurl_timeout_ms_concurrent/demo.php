@@ -41,7 +41,7 @@ $urls = [
 $opts = [  
     CURLOPT_HEADER => false,  
     CURLOPT_RETURNTRANSFER => true,  
-    CURLOPT_TIMEOUT_MS => 1500,  // 执行脚本超时  
+    CURLOPT_TIMEOUT_MS => 300,  // 执行脚本超时  
     CURLOPT_NOSIGNAL => true,   // 使用毫秒超时必须设置
 ];
   

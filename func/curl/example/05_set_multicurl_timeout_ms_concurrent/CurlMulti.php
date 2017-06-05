@@ -53,6 +53,7 @@ class CurlMulti {
             // 读取数据并删除该url对应的多个句柄
             while ($info = curl_multi_info_read($mh, $msgNum)) {
                 $detailInfo = curl_getinfo($info['handle']);
+                echo "url: ".$detailInfo['url']."\n";
                 foreach ($urls as $key => $urlArr) {
                     if (in_array($detailInfo['url'], $urlArr)) {
                         $results[$key]['url'] = $detailInfo['url'];
@@ -68,7 +69,8 @@ class CurlMulti {
 
             // 阻塞直到有活动连接
             if ($active) {
-                curl_multi_select($mh);
+                // 说明：阻塞时感知不到URL的超时，所以这里的slect超时设置过大的话会影响URL超时的精度
+                curl_multi_select($mh, 0.01);
             }
         } while ($active);
 
