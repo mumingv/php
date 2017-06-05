@@ -49,3 +49,9 @@ array(10) {
 */
 
 
+# 示例：字符替换
+$fromArr = ["%", " ", "\r", "\n", "\t"];
+$toArr = ["%25", "%20", "%0D", "%0A", "%09"];
+$string = "Operation timed out after 206 milliseconds with 0 out of -1 bytes received\n";
+$retStr = str_replace($fromArr, $toArr, "Operation timed out after 206 milliseconds with 0 out of -1 bytes received\n");
+var_dump($retStr);
