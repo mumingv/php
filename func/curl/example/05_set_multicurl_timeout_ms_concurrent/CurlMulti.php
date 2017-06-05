@@ -65,6 +65,11 @@ class CurlMulti {
                     }
                 }
             }
+
+            // 阻塞直到有活动连接
+            if ($active) {
+                curl_multi_select($mh);
+            }
         } while ($active);
 
         curl_multi_close($mh);  
