@@ -13,6 +13,12 @@ class Index
         return 'Hello, ' . $name . '!';
     }
 
+	// 2.URL和路由->参数传入
+    public function hello2($name = 'World', $city = '')
+    {
+        return 'Hello,' . $name . '! You come from ' . $city . '.';
+    }
+
     /*
     public function index()
     {
