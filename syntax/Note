@@ -3,3 +3,4 @@ class_object            类与对象：http://php.net/manual/zh/language.oop5.ph
 flow_control            流程控制语句：http://php.net/manual/zh/language.control-structures.php
 magic_constant          魔术常量
 namespaces              命名空间：http://php.net/manual/zh/language.namespaces.php
+keyword                 关键字

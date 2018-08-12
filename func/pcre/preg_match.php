@@ -84,3 +84,7 @@ preg_match('/[^.]+\.[^.]+$/', $host, $matches);
 var_dump($matches);
 
 
+$html = '<div id="detail-page" ><div class="item-wrap"><header class="article-header" data-pos="1"><div class="article-title"><h1>重磅！“一带一路”峰会联合公报发布 主语是“我们” </h1></div></header></div><div class="item-wrap"><div class="article-info" ><span class="info-src">金融界</span><span class="info-date">05-16</span><span class="info-time">11:16</span></div></div><div class="item-wrap"><article>';
+preg_match('@<span class="info-src">(.*)</span>@', $html, $matches);
+var_dump($matches);
+
